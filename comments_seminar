@@ -1,11 +1,11 @@
 too specialised
 Don't use GLW, ADS, BPGGSZ
 big picture at the start, with which measurements
-cabbibo -> cabibbo
+x cabbibo -> cabibbo
 need more explaining, too much flavour physics
 more conclusion and general interest for people outside of lhcb
-slide 12: mention that this is before b factories
-slide 16: stress that we want to overconstrain the UT
+x slide 12: mention that this is before b factories
+x slide 16: stress that we want to overconstrain the UT
 slide 16: why is it a challenge even though it's a tree level, and why is lhcb doing so well on this
 mention that 4 degrees is the target for run 2
 use more colours
@@ -13,26 +13,26 @@ spend more time explaining how charm factories can measure strong phases
 explain why the strong phase of Dpi0 and Dgamma is opposite
 slide 58: cite paper by Bondar
 Slide 2: need an overview slide with where we are as a collaboration before this slide, make it clear it's run 1 and 2
-slide 6: discuss sakhrarov condidations are how it connects antimatter asymmetry to CPV
-slide 8: rephrase because we already know SM can't explain the asymmetry
-slide 8: it's also important to understand the interactions between quarks and if the CKM matrix is unitary? Need a deeper understanding! Need to understand where to look for new physics, which may not have the CKM structure
+x slide 6: discuss sakhrarov condidations are how it connects antimatter asymmetry to CPV
+x slide 8: rephrase because we already know SM can't explain the asymmetry
+x slide 8: it's also important to understand the interactions between quarks and if the CKM matrix is unitary? Need a deeper understanding! Need to understand where to look for new physics, which may not have the CKM structure
 slide 10: leading order CKM matrix to the CPV terms, perhaps mention that before with 2x2 matrix there is no CPV, define lambda, rho, eta
-mention that 2008 nobel prize was for cp violation
-slide 10: "in the SM, with only 3 generations, V must be unitary"
+x mention that 2008 nobel prize was for cp violation
+x slide 10: "in the SM, with only 3 generations, V must be unitary"
 slide 10: mention that since it adds to zero it is a triangle, mention that there are 6 triangle but only this one has large angles, and also mention the alternative defintions
 between slide 12 and 13, add something about the other measurements of the UT (in particular sin(2beta) and the mixing measurements of B0/Bs)
 mention how beta is measured very well, and why alpha is difficult to measure at LHCb
-slide 12: no CPV meausurements in this plot from B factories!
-slide 12: Add the whole evolution of the UT from ckmfitter, or just 2012 (pre lhcb)
+x slide 12: no CPV meausurements in this plot from B factories!
+x slide 12: Add the whole evolution of the UT from ckmfitter, or just 2012 (pre lhcb)
 slide 16: mention that we don't expect new physics at tree level, but we expect new particles in loops
 slide 16: mention that theory uncertiantnies are small because we measure delta_B and r_B directly
-slide 16: mention that this plot is old!
+x slide 16: mention that this plot is old!
 slide 17: explain where the uncertainties come from at loop level
 slide 17: "global fit assuming unitary"
-slide 16: mention that we are only focusing on the direct gamma measurement, but there is also another measurement here
-slide 16: replace result with the LHCb combination, or just remove slide completely! Loop level plot is the "SM prediction"
+x slide 16: mention that we are only focusing on the direct gamma measurement, but there is also another measurement here
+x slide 16: replace result with the LHCb combination, or just remove slide completely! Loop level plot is the "SM prediction"
 slide 17: Don't expect new physics at tree level
-slide 20: run 1 and 2 lhcb detector
+x slide 20: run 1 and 2 lhcb detector
 slide 22: how does the VELO and RICH improve the mass plots
 slide 22: mention the trigger and how it's improved
 slide 23: identity particles from b and d decays
