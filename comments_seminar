@@ -33,19 +33,19 @@ x slide 16: mention that we are only focusing on the direct gamma measurement, b
 x slide 16: replace result with the LHCb combination, or just remove slide completely! Loop level plot is the "SM prediction"
 x slide 17: Don't expect new physics at tree level
 x slide 20: run 1 and 2 lhcb detector
-slide 22: how does the VELO and RICH improve the mass plots
+x slide 22: how does the VELO and RICH improve the mass plots
 slide 22: mention the trigger and how it's improved
 x slide 23: identity particles from b and d decays
 x slide 25: "superposition when D and Dbar decay to the same final state"
 x slide 25: colour and CKM suppression
 x slide 25: split slide into two, much slower explanation with clear definitions of rB and deltaB
 slide 25: Why is gamma hard: B->DK is suppressed, and interference is small
-slide 26: "severla methods are used to measure gamma precisely
-slide 26: Put GLW in brackets with reference
-slide 32: self-conjugate multi-body
+x slide 26: "severla methods are used to measure gamma precisely
+x slide 26: Put GLW in brackets with reference
+x slide 32: self-conjugate multi-body
 slide 30: put values of rB and rD on the diagram
 slide 30: mention that it's the interference of DCS and CF
-slide 28: large B+ and B-, and use a line to show the asymmetry
+x slide 28: large B+ and B-, and use a line to show the asymmetry
 slide 27: mention that we cannot get a unique value of gamma
 slide 31: slide with contours of gamma from Donal's paper
 slide 30: discuss rD and deltaD and where we take them from
@@ -53,7 +53,7 @@ slide 31: spend more time explaining what partially reconstructed is and point o
 slide 31: mention that i will talk about the part reco later
 slide 31: mention the low BF of DCS Kpi and why the B factories could not see this
 slide 31: discuss features of the low mass background, low mid ID, low combinatorial
-slide 28: show how large the mid ID from Dpi would be without PID
+x slide 28: show how large the mid ID from Dpi would be without PID
 slide 28: simplified legend or arrows to point out what the different things are
 slide 28: show the Dpi plots first and talk through the detector features
 slide 33: what is phi?
