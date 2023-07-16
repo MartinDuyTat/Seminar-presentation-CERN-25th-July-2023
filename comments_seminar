@@ -20,25 +20,25 @@ slide 10: leading order CKM matrix to the CPV terms, perhaps mention that before
 x mention that 2008 nobel prize was for cp violation
 x slide 10: "in the SM, with only 3 generations, V must be unitary"
 slide 10: mention that since it adds to zero it is a triangle, mention that there are 6 triangle but only this one has large angles, and also mention the alternative defintions
-between slide 12 and 13, add something about the other measurements of the UT (in particular sin(2beta) and the mixing measurements of B0/Bs)
+x between slide 12 and 13, add something about the other measurements of the UT (in particular sin(2beta) and the mixing measurements of B0/Bs)
 mention how beta is measured very well, and why alpha is difficult to measure at LHCb
 x slide 12: no CPV meausurements in this plot from B factories!
 x slide 12: Add the whole evolution of the UT from ckmfitter, or just 2012 (pre lhcb)
-slide 16: mention that we don't expect new physics at tree level, but we expect new particles in loops
-slide 16: mention that theory uncertiantnies are small because we measure delta_B and r_B directly
+x slide 16: mention that we don't expect new physics at tree level, but we expect new particles in loops
+x slide 16: mention that theory uncertiantnies are small because we measure delta_B and r_B directly
 x slide 16: mention that this plot is old!
-slide 17: explain where the uncertainties come from at loop level
-slide 17: "global fit assuming unitary"
+x slide 17: explain where the uncertainties come from at loop level
+x slide 17: "global fit assuming unitary"
 x slide 16: mention that we are only focusing on the direct gamma measurement, but there is also another measurement here
 x slide 16: replace result with the LHCb combination, or just remove slide completely! Loop level plot is the "SM prediction"
-slide 17: Don't expect new physics at tree level
+x slide 17: Don't expect new physics at tree level
 x slide 20: run 1 and 2 lhcb detector
 slide 22: how does the VELO and RICH improve the mass plots
 slide 22: mention the trigger and how it's improved
-slide 23: identity particles from b and d decays
-slide 25: "superposition when D and Dbar decay to the same final state"
-slide 25: colour and CKM suppression
-slide 25: split slide into two, much slower explanation with clear definitions of rB and deltaB
+x slide 23: identity particles from b and d decays
+x slide 25: "superposition when D and Dbar decay to the same final state"
+x slide 25: colour and CKM suppression
+x slide 25: split slide into two, much slower explanation with clear definitions of rB and deltaB
 slide 25: Why is gamma hard: B->DK is suppressed, and interference is small
 slide 26: "severla methods are used to measure gamma precisely
 slide 26: Put GLW in brackets with reference
@@ -113,75 +113,3 @@ slide 74: mention that with software trigger the efficienices are much higher
 slide 72: point 2 B0 will really improve the precision and hopefully become competitive with B+
 slide 74: add the same ckmfitter plots again and show how we can reach loop level precision and match the indirect precision
 slide 74: indirect preicsion comes from lattice QCD so it will also improve!
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

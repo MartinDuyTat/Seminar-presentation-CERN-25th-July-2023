@@ -318,7 +318,6 @@
       \end{itemize}
     \end{column}
   \end{columns}
-  \vspace{0.5cm}
   \begin{center}
     \large We must verify if $V_{\rm CKM}$ is unitary, and gain a deeper understanding of quark interactions
   \end{center}
@@ -340,7 +339,6 @@
       \end{itemize}
     \end{column}
   \end{columns}
-  \vspace{0.5cm}
   \begin{center}
     \large Precise knowledge of quark interactions will help us search for new physics with CPV, which may not have the same CKM structure
   \end{center}
@@ -415,22 +413,93 @@
 \end{frame}
 
 \begin{frame}{The CKM matrix and the Unitary Triangle}
-  \begin{itemize}
-    \setlength\itemsep{0.5em}
-    \item{Why is $\gamma = \text{arg}\Big(-\frac{V^{\phantom{*}}_{ud}V^*_{ub}}{V^{\phantom{*}}_{cd}V^*_{cb}}\Big)$ important?}
-    \begin{enumerate}
-    \setlength\itemsep{0.5em}
-      \item{Negligible theoretical uncertainties: Ideal SM benchmark}
-      \item{Only CKM angle accessible in tree level decays}
-      \item{We want to \underline{overconstrain} the Unitary Triangle}
-    \end{enumerate}
-  \end{itemize}
+  \begin{center}
+    Loop level measurements of $\gamma$ are dominated by $\sin(2\beta)$ and $B^0$/$B^0_s$ mixing
+  \end{center}
+  \vspace{-0.2cm}
+  \begin{figure}
+    \begin{overpic}[percent,width=0.50\textwidth]{Plots/CKM_global_2021.png}
+      \put(98,71){\vector(-1.0,-0.2){50}}
+      \put(100,70){Global CKM fit}
+      \put(88,100){\vector(-1.0,-0.5){58}}
+      \put(120,100){\vector(-1.0,-0.5){45}}
+    \end{overpic}
+    \vspace{-0.3cm}
+    \caption*{\centering\tiny CKMfitter Group (J. Charles et al.), Eur. Phys. J. C41, 1-131 (2005), updated results and plots available at: \href{http://ckmfitter.in2p3.fr}{http://ckmfitter.in2p3.fr}}
+  \end{figure}
+\end{frame}
+
+\begin{frame}{The CKM matrix and the Unitary Triangle}
+  \begin{center}
+    \Large LHC seminar by P. Li and V. Jevtic on 13th June 2023:\\
+    \Large Single most precise measurement of $\sin(2\beta)$
+  \end{center}
+  \vspace{-0.3cm}
+  \begin{figure}
+    \centering
+    \begin{subfigure}{0.55\textwidth}
+      \begin{overpic}[width = 1.0\textwidth]{Plots/asym_sin2beta.pdf}
+        \put(16.5,16.5){\tiny Preliminary}
+      \end{overpic}
+    \end{subfigure}%
+    \begin{subfigure}{0.4\textwidth}
+      \vspace{-0.45cm}
+      \includegraphics[width = 1.0\textwidth]{Plots/btoccsS_CP_woImprecise.png}
+    \end{subfigure}
+  \end{figure}
+  \vspace{-0.5cm}
+  \begin{center}
+    \Large World average: $\sin(2\beta) = 0.708 \pm 0.011$\\
+    \Large $\beta = (22.5 \pm 0.4)^\circ$
+  \end{center}
+\end{frame}
+
+\begin{frame}{The CKM matrix and the Unitary Triangle}
+  \begin{center}
+    \Large From $B^0$/$B^0_s$ mixing, $\lvert V_{td}^{\phantom{*}}V_{tb}^*\rvert$ is measured\\
+    \large This is dominated by lattice QCD uncertainties
+  \end{center}
+  \vspace{-0.3cm}
+  \begin{figure}
+    \centering
+    \includegraphics[width = 0.6\textwidth]{Plots/Bs_mixing.pdf}
+    \vspace{-0.8cm}
+    \caption*{\tiny Nature Physics \textbf{18}, (2022) 1}
+  \end{figure}
+  \vspace{-0.8cm}
+  \begin{center}
+    \Large HFLAV averages:\\
+    \large $\Delta m_d = \SI{0.5065(19)}{\per\pico\second}$ \& $\Delta m_s = \SI{17.765(6)}{\per\pico\second}$
+  \end{center}
+\end{frame}
+
+% TODO: This slide is a block of text
+\begin{frame}{The CKM matrix and the Unitary Triangle}
+  \begin{center}
+    {\Large Why is the CKM angle $\gamma$ of interest?}
+  \end{center}
+  \begin{enumerate}
+    \setlength\itemsep{0.0em}
+    \item{Negligible theoretical uncertainties: Ideal SM benchmark}
+    \begin{itemize}
+      \item{Hadronic parameters are free parameters}
+    \end{itemize}
+    \item{Only CKM angle accessible in tree level decays}
+    \begin{itemize}
+      \item{Don't expect new physics at tree level, new particles appear in loops}
+    \end{itemize}
+    \item{We want to \underline{overconstrain} the Unitary Triangle}
+  \end{enumerate}
   \vspace{-0.2cm}
   \begin{figure}
     \centering
     \begin{subfigure}{0.5\textwidth}
       \centering
-      \includegraphics[width = 1.0\textwidth]{Plots/ckmfitter_loop.png}
+      \begin{overpic}[width = 1.0\textwidth]{Plots/ckmfitter_loop.png}
+        \put(100,28){\vector(-1.0,-0.25){55}}
+        \put(100,30){Dominated by}
+        \put(100,22){lattice QCD}
+      \end{overpic}
       \caption*{Loop level: \colorbox{Cerulean!30}{$\gamma = \big(65.5^{+1.1}_{-2.7}\big)^\circ$}}
     \end{subfigure}
     \vspace{-0.3cm}
@@ -439,7 +508,7 @@
   \end{figure}
   \vspace{-0.7cm}
   \begin{center}
-    With precise $\gamma$ measurements, we can compare with the indirect loop level measurements, which assume unitarity
+    With precise $\gamma$ measurements, we can compare with the indirect loop level measurements, which assume unitarity (``SM prediction'')
   \end{center}
 \end{frame}
 
@@ -476,7 +545,7 @@
     \includegraphics[width = 0.7\textwidth]{Plots/LHCbDetector_RICH.png}
   \end{figure}
   \begin{center}
-    \Large RICH: Identify $B$ and $D$ daughter particles
+    \Large RICH: Identify particles from $B$ and $D$
   \end{center}
 \end{frame}
 
@@ -485,6 +554,165 @@
   \begin{center}
     {\huge How to measure $\gamma$?}\\~\\
     {\large It's all about interferences!}
+  \end{center}
+\end{frame}
+
+\begin{frame}[fragile]{Sensitivity through interference}
+  \begin{center}
+    \Large Measure $\gamma$ through interference effects in $B^\pm\to DK^\pm$
+  \end{center}
+  \begin{figure}[H]
+    \centering
+    \begin{subfigure}{0.5\textwidth}
+      \centering
+      \begin{fmffile}{fgraph/fgraph_BtoDK1}
+        \setlength{\unitlength}{0.4cm}
+        \begin{fmfgraph*}(6,6)
+          \fmfstraight
+          \fmfleft{i1,B,i2,t1,t2,t3,t9,t10}
+          \fmfright{o1,D,o2,t4,t5,o3,K,o4}
+          \fmflabel{$\bar{u}$}{i1}
+          \fmflabel{$b$}{i2}
+          \fmfv{l.d=20,l.a=180,l={$B^-$\mylbrace{30}{-8}}}{B}
+          \fmflabel{$\bar{u}$}{o1}
+          \fmflabel{$c$}{o2}
+          \fmflabel{$\bar{u}$}{o3}
+          \fmflabel{$s$}{o4}
+          \fmfv{l.d=15,l.a=0,l={\myrbrace{30}{-12}}$D^0$}{D}
+          \fmfv{l.d=15,l.a=0,l={\myrbrace{30}{11}}$K^-$}{K}
+          \fmf{fermion}{o1,i1}
+          \fmf{fermion,tension=1.5}{i2,v1}
+          \fmf{fermion}{v1,o2}
+          \fmf{phantom,tension=1.5}{t9,v2}
+          \fmf{boson,label=$W$,label.side=left,tension=0}{v1,v2}
+          \fmf{fermion}{v2,o4}
+          \fmf{fermion}{o3,v2}
+        \end{fmfgraph*}
+      \end{fmffile}
+      \vspace{0.5cm}
+      \caption*{Favoured $B^-\to D^0K^-$}
+    \end{subfigure}%
+    \begin{subfigure}{0.5\textwidth}
+      \centering
+      \begin{fmffile}{fgraph/fgraph_BtoDK2}
+        \setlength{\unitlength}{0.4cm}
+        \begin{fmfgraph*}(6,6)
+          \fmfstraight
+          \fmfleft{i1,t1,t2,B,t9,t10,i2}
+          \fmfright{o1,K,o2,t4,t5,o3,D,o4}
+          \fmflabel{$\bar{u}$}{i1}
+          \fmflabel{$b$}{i2}
+          \fmfv{l.d=20,l.a=180,l={$B^-$\mylbrace{100}{-8}}}{B}
+          \fmflabel{$\bar{u}$}{o1}
+          \fmflabel{$s$}{o2}
+          \fmflabel{$\bar{c}$}{o3}
+          \fmflabel{$u$}{o4}
+          \fmfv{l.d=15,l.a=0,l={\myrbrace{30}{13}}$\bar{D^0}$}{D}
+          \fmfv{l.d=15,l.a=0,l={\myrbrace{30}{-13}}$K^-$}{K}
+          \fmf{fermion}{o1,i1}
+          \fmf{fermion,tension=1.5}{i2,v1}
+          \fmf{fermion}{v1,o4}
+          \fmf{phantom,tension=1.5}{t2,v2}
+          \fmf{boson,label=$W$,label.side=left,tension=0}{v1,v2}
+          \fmf{fermion}{v2,o2}
+          \fmf{fermion}{o3,v2}
+        \end{fmfgraph*}
+      \end{fmffile}
+      \vspace{0.5cm}
+      \caption*{CKM$+$colour suppressed $B^-\to\bar{D^0}K^-$}
+    \end{subfigure}
+  \end{figure}
+  \begin{center}
+    {\large Interference when $D^0$ and $\bar{D^0}$ decay to a common final state $f_D$}
+  \end{center}
+  \vspace{-0.26cm}
+  \begin{equation*}
+    \begin{tikzcd}[column sep=huge,row sep=tiny]
+      & D^0K^- \arrow[dr] & \\
+      B^- \arrow[ur] \arrow[dr] & [5cm] & f_DK^- \\
+      & \bar{D^0}K^- \arrow[ur] & \\
+    \end{tikzcd}
+  \end{equation*}
+  \vspace{-0.4cm}
+\end{frame}
+
+\begin{frame}{Sensitivity through interference}
+  \begin{center}
+    \Large Measure $\gamma$ through interference effects in $B^\pm\to DK^\pm$
+  \end{center}
+  \begin{figure}[H]
+    \centering
+    \begin{subfigure}{0.5\textwidth}
+      \centering
+      \begin{fmffile}{fgraph/fgraph_BtoDK1}
+        \setlength{\unitlength}{0.4cm}
+        \begin{fmfgraph*}(6,6)
+          \fmfstraight
+          \fmfleft{i1,B,i2,t1,t2,t3,t9,t10}
+          \fmfright{o1,D,o2,t4,t5,o3,K,o4}
+          \fmflabel{$\bar{u}$}{i1}
+          \fmflabel{$b$}{i2}
+          \fmfv{l.d=20,l.a=180,l={$B^-$\mylbrace{30}{-8}}}{B}
+          \fmflabel{$\bar{u}$}{o1}
+          \fmflabel{$c$}{o2}
+          \fmflabel{$\bar{u}$}{o3}
+          \fmflabel{$s$}{o4}
+          \fmfv{l.d=15,l.a=0,l={\myrbrace{30}{-12}}$D^0$}{D}
+          \fmfv{l.d=15,l.a=0,l={\myrbrace{30}{11}}$K^-$}{K}
+          \fmf{fermion}{o1,i1}
+          \fmf{fermion,tension=1.5}{i2,v1}
+          \fmf{fermion}{v1,o2}
+          \fmf{phantom,tension=1.5}{t9,v2}
+          \fmf{boson,label=$W$,label.side=left,tension=0}{v1,v2}
+          \fmf{fermion}{v2,o4}
+          \fmf{fermion}{o3,v2}
+        \end{fmfgraph*}
+      \end{fmffile}
+      \vspace{0.5cm}
+      \caption*{Favoured $B^-\to D^0K^-$}
+    \end{subfigure}%
+    \begin{subfigure}{0.5\textwidth}
+      \centering
+      \begin{fmffile}{fgraph/fgraph_BtoDK2}
+        \setlength{\unitlength}{0.4cm}
+        \begin{fmfgraph*}(6,6)
+          \fmfstraight
+          \fmfleft{i1,t1,t2,B,t9,t10,i2}
+          \fmfright{o1,K,o2,t4,t5,o3,D,o4}
+          \fmflabel{$\bar{u}$}{i1}
+          \fmflabel{$b$}{i2}
+          \fmfv{l.d=20,l.a=180,l={$B^-$\mylbrace{100}{-8}}}{B}
+          \fmflabel{$\bar{u}$}{o1}
+          \fmflabel{$s$}{o2}
+          \fmflabel{$\bar{c}$}{o3}
+          \fmflabel{$u$}{o4}
+          \fmfv{l.d=15,l.a=0,l={\myrbrace{30}{13}}$\bar{D^0}$}{D}
+          \fmfv{l.d=15,l.a=0,l={\myrbrace{30}{-13}}$K^-$}{K}
+          \fmf{fermion}{o1,i1}
+          \fmf{fermion,tension=1.5}{i2,v1}
+          \fmf{fermion}{v1,o4}
+          \fmf{phantom,tension=1.5}{t2,v2}
+          \fmf{boson,label=$W$,label.side=left,tension=0}{v1,v2}
+          \fmf{fermion}{v2,o2}
+          \fmf{fermion}{o3,v2}
+        \end{fmfgraph*}
+      \end{fmffile}
+      \vspace{0.5cm}
+      \caption*{CKM$+$colour suppressed $B^-\to\bar{D^0}K^-$}
+    \end{subfigure}
+  \end{figure}
+  \vspace{-0.3cm}
+  \begin{center}
+    $b\to u\bar{c}s$ and $b\to c\bar{u}s$ interference $\to$ Sensitivity to $\gamma$
+  \end{center}
+  \vspace{-0.3cm}
+  \begin{center}
+    $\mathcal{A}(B^-)=\mathcal{A}_B\big(\mathcal{A}_{D^0} + \colorbox{white}{$r_B$}e^{i(\scriptsize\colorbox{white}{$\delta_B$} - \colorbox{white}{$\gamma$})}\mathcal{A}_{\bar{D^0}}\big)$ \\
+    $\mathcal{A}(B^+)=\mathcal{A}_B\big(\mathcal{A}_{\bar{D^0}} + \colorbox{white}{$r_B$}e^{i(\scriptsize\colorbox{white}{$\delta_B$} + \colorbox{white}{$\gamma$})}\mathcal{A}_{D^0}\big)$ \\
+  \end{center}
+  \vspace{-0.3cm}
+  \begin{center}
+    \phantom{The magnitude of interference effects governed by $r_B\approx0.1$}
   \end{center}
 \end{frame}
 
@@ -550,23 +778,262 @@
         \end{fmfgraph*}
       \end{fmffile}
       \vspace{0.5cm}
-      \caption*{Suppressed $B^-\to\bar{D^0}K^-$}
+      \caption*{CKM$+$colour suppressed $B^-\to\bar{D^0}K^-$}
     \end{subfigure}
   \end{figure}
   \vspace{-0.3cm}
-  \begin{itemize}
-    \item{Superposition of $D^0$ and $\bar{D^0}$}
-    \item{$b\to u\bar{c}s$ and $b\to c\bar{u}s$ interference $\to$ Sensitivity to $\gamma$}
-  \end{itemize}
-  \vspace{-0.3cm}
   \begin{center}
-    $\mathcal{A}(B^-)=\mathcal{A}_B\Big(\mathcal{A}_{D^0} + r_Be^{i(\delta_B - \gamma)}\mathcal{A}_{\bar{D^0}}\Big)$ \\
-    $\mathcal{A}(B^+)=\mathcal{A}_B\Big(\mathcal{A}_{\bar{D^0}} + r_Be^{i(\delta_B + \gamma)}\mathcal{A}_{D^0}\Big)$ \\
+    $b\to u\bar{c}s$ and $b\to c\bar{u}s$ interference $\to$ Sensitivity to $\gamma$
   \end{center}
   \vspace{-0.3cm}
-  \begin{itemize}
-    \item{The magnitude of interference effects governed by $r_B\approx0.1$}
-  \end{itemize}
+  \begin{center}
+    $\mathcal{A}(B^-)=\mathcal{A}_B\big(\mathcal{A}_{D^0} + \colorbox{Cerulean!30}{$r_B$}e^{i(\scriptsize\colorbox{white}{$\delta_B$} - \colorbox{white}{$\gamma$})}\mathcal{A}_{\bar{D^0}}\big)$ \\
+    $\mathcal{A}(B^+)=\mathcal{A}_B\big(\mathcal{A}_{\bar{D^0}} + \colorbox{Cerulean!30}{$r_B$}e^{i(\scriptsize\colorbox{white}{$\delta_B$} + \colorbox{white}{$\gamma$})}\mathcal{A}_{D^0}\big)$ \\
+  \end{center}
+  \vspace{-0.3cm}
+  \begin{center}
+    The magnitude of interference effects governed by $r_B\approx0.1$
+  \end{center}
+\end{frame}
+
+\begin{frame}{Sensitivity through interference}
+  \begin{center}
+    \Large Measure $\gamma$ through interference effects in $B^\pm\to DK^\pm$
+  \end{center}
+  \begin{figure}[H]
+    \centering
+    \begin{subfigure}{0.5\textwidth}
+      \centering
+      \begin{fmffile}{fgraph/fgraph_BtoDK1}
+        \setlength{\unitlength}{0.4cm}
+        \begin{fmfgraph*}(6,6)
+          \fmfstraight
+          \fmfleft{i1,B,i2,t1,t2,t3,t9,t10}
+          \fmfright{o1,D,o2,t4,t5,o3,K,o4}
+          \fmflabel{$\bar{u}$}{i1}
+          \fmflabel{$b$}{i2}
+          \fmfv{l.d=20,l.a=180,l={$B^-$\mylbrace{30}{-8}}}{B}
+          \fmflabel{$\bar{u}$}{o1}
+          \fmflabel{$c$}{o2}
+          \fmflabel{$\bar{u}$}{o3}
+          \fmflabel{$s$}{o4}
+          \fmfv{l.d=15,l.a=0,l={\myrbrace{30}{-12}}$D^0$}{D}
+          \fmfv{l.d=15,l.a=0,l={\myrbrace{30}{11}}$K^-$}{K}
+          \fmf{fermion}{o1,i1}
+          \fmf{fermion,tension=1.5}{i2,v1}
+          \fmf{fermion}{v1,o2}
+          \fmf{phantom,tension=1.5}{t9,v2}
+          \fmf{boson,label=$W$,label.side=left,tension=0}{v1,v2}
+          \fmf{fermion}{v2,o4}
+          \fmf{fermion}{o3,v2}
+        \end{fmfgraph*}
+      \end{fmffile}
+      \vspace{0.5cm}
+      \caption*{Favoured $B^-\to D^0K^-$}
+    \end{subfigure}%
+    \begin{subfigure}{0.5\textwidth}
+      \centering
+      \begin{fmffile}{fgraph/fgraph_BtoDK2}
+        \setlength{\unitlength}{0.4cm}
+        \begin{fmfgraph*}(6,6)
+          \fmfstraight
+          \fmfleft{i1,t1,t2,B,t9,t10,i2}
+          \fmfright{o1,K,o2,t4,t5,o3,D,o4}
+          \fmflabel{$\bar{u}$}{i1}
+          \fmflabel{$b$}{i2}
+          \fmfv{l.d=20,l.a=180,l={$B^-$\mylbrace{100}{-8}}}{B}
+          \fmflabel{$\bar{u}$}{o1}
+          \fmflabel{$s$}{o2}
+          \fmflabel{$\bar{c}$}{o3}
+          \fmflabel{$u$}{o4}
+          \fmfv{l.d=15,l.a=0,l={\myrbrace{30}{13}}$\bar{D^0}$}{D}
+          \fmfv{l.d=15,l.a=0,l={\myrbrace{30}{-13}}$K^-$}{K}
+          \fmf{fermion}{o1,i1}
+          \fmf{fermion,tension=1.5}{i2,v1}
+          \fmf{fermion}{v1,o4}
+          \fmf{phantom,tension=1.5}{t2,v2}
+          \fmf{boson,label=$W$,label.side=left,tension=0}{v1,v2}
+          \fmf{fermion}{v2,o2}
+          \fmf{fermion}{o3,v2}
+        \end{fmfgraph*}
+      \end{fmffile}
+      \vspace{0.5cm}
+      \caption*{CKM$+$colour suppressed $B^-\to\bar{D^0}K^-$}
+    \end{subfigure}
+  \end{figure}
+  \vspace{-0.3cm}
+  \begin{center}
+    $b\to u\bar{c}s$ and $b\to c\bar{u}s$ interference $\to$ Sensitivity to $\gamma$
+  \end{center}
+  \vspace{-0.3cm}
+  \begin{center}
+    $\mathcal{A}(B^-)=\mathcal{A}_B\big(\mathcal{A}_{D^0} + \colorbox{white}{$r_B$}e^{i(\scriptsize\colorbox{Cerulean!30}{$\delta_B$} - \colorbox{white}{$\gamma$})}\mathcal{A}_{\bar{D^0}}\big)$ \\
+    $\mathcal{A}(B^+)=\mathcal{A}_B\big(\mathcal{A}_{\bar{D^0}} + \colorbox{white}{$r_B$}e^{i(\scriptsize\colorbox{Cerulean!30}{$\delta_B$} + \colorbox{white}{$\gamma$})}\mathcal{A}_{D^0}\big)$ \\
+  \end{center}
+  \vspace{-0.3cm}
+  \begin{center}
+    The strong-phase difference $\delta_B$ accounts for all unknown QCD phase shifts
+  \end{center}
+\end{frame}
+
+\begin{frame}{Sensitivity through interference}
+  \begin{center}
+    \Large Measure $\gamma$ through interference effects in $B^\pm\to DK^\pm$
+  \end{center}
+  \begin{figure}[H]
+    \centering
+    \begin{subfigure}{0.5\textwidth}
+      \centering
+      \begin{fmffile}{fgraph/fgraph_BtoDK1}
+        \setlength{\unitlength}{0.4cm}
+        \begin{fmfgraph*}(6,6)
+          \fmfstraight
+          \fmfleft{i1,B,i2,t1,t2,t3,t9,t10}
+          \fmfright{o1,D,o2,t4,t5,o3,K,o4}
+          \fmflabel{$\bar{u}$}{i1}
+          \fmflabel{$b$}{i2}
+          \fmfv{l.d=20,l.a=180,l={$B^-$\mylbrace{30}{-8}}}{B}
+          \fmflabel{$\bar{u}$}{o1}
+          \fmflabel{$c$}{o2}
+          \fmflabel{$\bar{u}$}{o3}
+          \fmflabel{$s$}{o4}
+          \fmfv{l.d=15,l.a=0,l={\myrbrace{30}{-12}}$D^0$}{D}
+          \fmfv{l.d=15,l.a=0,l={\myrbrace{30}{11}}$K^-$}{K}
+          \fmf{fermion}{o1,i1}
+          \fmf{fermion,tension=1.5}{i2,v1}
+          \fmf{fermion}{v1,o2}
+          \fmf{phantom,tension=1.5}{t9,v2}
+          \fmf{boson,label=$W$,label.side=left,tension=0}{v1,v2}
+          \fmf{fermion}{v2,o4}
+          \fmf{fermion}{o3,v2}
+        \end{fmfgraph*}
+      \end{fmffile}
+      \vspace{0.5cm}
+      \caption*{Favoured $B^-\to D^0K^-$}
+    \end{subfigure}%
+    \begin{subfigure}{0.5\textwidth}
+      \centering
+      \begin{fmffile}{fgraph/fgraph_BtoDK2}
+        \setlength{\unitlength}{0.4cm}
+        \begin{fmfgraph*}(6,6)
+          \fmfstraight
+          \fmfleft{i1,t1,t2,B,t9,t10,i2}
+          \fmfright{o1,K,o2,t4,t5,o3,D,o4}
+          \fmflabel{$\bar{u}$}{i1}
+          \fmflabel{$b$}{i2}
+          \fmfv{l.d=20,l.a=180,l={$B^-$\mylbrace{100}{-8}}}{B}
+          \fmflabel{$\bar{u}$}{o1}
+          \fmflabel{$s$}{o2}
+          \fmflabel{$\bar{c}$}{o3}
+          \fmflabel{$u$}{o4}
+          \fmfv{l.d=15,l.a=0,l={\myrbrace{30}{13}}$\bar{D^0}$}{D}
+          \fmfv{l.d=15,l.a=0,l={\myrbrace{30}{-13}}$K^-$}{K}
+          \fmf{fermion}{o1,i1}
+          \fmf{fermion,tension=1.5}{i2,v1}
+          \fmf{fermion}{v1,o4}
+          \fmf{phantom,tension=1.5}{t2,v2}
+          \fmf{boson,label=$W$,label.side=left,tension=0}{v1,v2}
+          \fmf{fermion}{v2,o2}
+          \fmf{fermion}{o3,v2}
+        \end{fmfgraph*}
+      \end{fmffile}
+      \vspace{0.5cm}
+      \caption*{CKM$+$colour suppressed $B^-\to\bar{D^0}K^-$}
+    \end{subfigure}
+  \end{figure}
+  \vspace{-0.3cm}
+  \begin{center}
+    $b\to u\bar{c}s$ and $b\to c\bar{u}s$ interference $\to$ Sensitivity to $\gamma$
+  \end{center}
+  \vspace{-0.3cm}
+  \begin{center}
+    $\mathcal{A}(B^-)=\mathcal{A}_B\big(\mathcal{A}_{D^0} + \colorbox{white}{$r_B$}e^{i(\scriptsize\colorbox{white}{$\delta_B$} - \colorbox{Cerulean!30}{$\gamma$})}\mathcal{A}_{\bar{D^0}}\big)$ \\
+    $\mathcal{A}(B^+)=\mathcal{A}_B\big(\mathcal{A}_{\bar{D^0}} + \colorbox{white}{$r_B$}e^{i(\scriptsize\colorbox{white}{$\delta_B$} + \colorbox{Cerulean!30}{$\gamma$})}\mathcal{A}_{D^0}\big)$ \\
+  \end{center}
+  \vspace{-0.3cm}
+  \begin{center}
+    The weak phase $\gamma$ swaps sign under CP
+  \end{center}
+\end{frame}
+
+\begin{frame}{Sensitivity through interference}
+  \begin{center}
+    \Large Measure $\gamma$ through interference effects in $B^\pm\to DK^\pm$
+  \end{center}
+  \begin{figure}[H]
+    \centering
+    \begin{subfigure}{0.5\textwidth}
+      \centering
+      \begin{fmffile}{fgraph/fgraph_BtoDK1}
+        \setlength{\unitlength}{0.4cm}
+        \begin{fmfgraph*}(6,6)
+          \fmfstraight
+          \fmfleft{i1,B,i2,t1,t2,t3,t9,t10}
+          \fmfright{o1,D,o2,t4,t5,o3,K,o4}
+          \fmflabel{$\bar{u}$}{i1}
+          \fmflabel{$b$}{i2}
+          \fmfv{l.d=20,l.a=180,l={$B^-$\mylbrace{30}{-8}}}{B}
+          \fmflabel{$\bar{u}$}{o1}
+          \fmflabel{$c$}{o2}
+          \fmflabel{$\bar{u}$}{o3}
+          \fmflabel{$s$}{o4}
+          \fmfv{l.d=15,l.a=0,l={\myrbrace{30}{-12}}$D^0$}{D}
+          \fmfv{l.d=15,l.a=0,l={\myrbrace{30}{11}}$K^-$}{K}
+          \fmf{fermion}{o1,i1}
+          \fmf{fermion,tension=1.5}{i2,v1}
+          \fmf{fermion}{v1,o2}
+          \fmf{phantom,tension=1.5}{t9,v2}
+          \fmf{boson,label=$W$,label.side=left,tension=0}{v1,v2}
+          \fmf{fermion}{v2,o4}
+          \fmf{fermion}{o3,v2}
+        \end{fmfgraph*}
+      \end{fmffile}
+      \vspace{0.5cm}
+      \caption*{Favoured $B^-\to D^0K^-$}
+    \end{subfigure}%
+    \begin{subfigure}{0.5\textwidth}
+      \centering
+      \begin{fmffile}{fgraph/fgraph_BtoDK2}
+        \setlength{\unitlength}{0.4cm}
+        \begin{fmfgraph*}(6,6)
+          \fmfstraight
+          \fmfleft{i1,t1,t2,B,t9,t10,i2}
+          \fmfright{o1,K,o2,t4,t5,o3,D,o4}
+          \fmflabel{$\bar{u}$}{i1}
+          \fmflabel{$b$}{i2}
+          \fmfv{l.d=20,l.a=180,l={$B^-$\mylbrace{100}{-8}}}{B}
+          \fmflabel{$\bar{u}$}{o1}
+          \fmflabel{$s$}{o2}
+          \fmflabel{$\bar{c}$}{o3}
+          \fmflabel{$u$}{o4}
+          \fmfv{l.d=15,l.a=0,l={\myrbrace{30}{13}}$\bar{D^0}$}{D}
+          \fmfv{l.d=15,l.a=0,l={\myrbrace{30}{-13}}$K^-$}{K}
+          \fmf{fermion}{o1,i1}
+          \fmf{fermion,tension=1.5}{i2,v1}
+          \fmf{fermion}{v1,o4}
+          \fmf{phantom,tension=1.5}{t2,v2}
+          \fmf{boson,label=$W$,label.side=left,tension=0}{v1,v2}
+          \fmf{fermion}{v2,o2}
+          \fmf{fermion}{o3,v2}
+        \end{fmfgraph*}
+      \end{fmffile}
+      \vspace{0.5cm}
+      \caption*{CKM$+$colour suppressed $B^-\to\bar{D^0}K^-$}
+    \end{subfigure}
+  \end{figure}
+  \vspace{-0.3cm}
+  \begin{center}
+    $b\to u\bar{c}s$ and $b\to c\bar{u}s$ interference $\to$ Sensitivity to $\gamma$
+  \end{center}
+  \vspace{-0.3cm}
+  \begin{center}
+    $\mathcal{A}(B^-)=\mathcal{A}_B\big(\mathcal{A}_{D^0} + \colorbox{Cerulean!30}{$r_B$}e^{i(\scriptsize\colorbox{Cerulean!30}{$\delta_B$} - \colorbox{Cerulean!30}{$\gamma$})}\mathcal{A}_{\bar{D^0}}\big)$ \\
+    $\mathcal{A}(B^+)=\mathcal{A}_B\big(\mathcal{A}_{\bar{D^0}} + \colorbox{Cerulean!30}{$r_B$}e^{i(\scriptsize\colorbox{Cerulean!30}{$\delta_B$} + \colorbox{Cerulean!30}{$\gamma$})}\mathcal{A}_{D^0}\big)$ \\
+  \end{center}
+  \vspace{-0.3cm}
+  \begin{center}
+    $\gamma$, $r_B$, $\delta_B$ are free parameters $\implies$ No need for inputs from theory
+  \end{center}
 \end{frame}
 
 \begin{frame}{What $D$ final states?}
