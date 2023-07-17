@@ -62,6 +62,9 @@
 \usepackage{tikz}
 \usetikzlibrary{positioning,shapes}
 
+% Horizontal lines in math mode
+\usepackage{mathtools}
+
 % Here's where the presentation starts, with the info for the title slide
 \title[CERN LHC seminar]{The angle $\gamma$ of the Cabibbo-Kobayashi-Maskawa ansatz: a journey towards precision at LHCb}
 
@@ -1190,6 +1193,29 @@
   \begin{equation*}
     \lvert\mathcal{A}(B^-)\lvert^2\propto1 + r_B^2 + 2r_B\cos(\delta_B - \gamma)
   \end{equation*}
+  \begin{center}
+    \phantom{4-fold degeneracy: $(\gamma, \delta_B)\to(\delta_B, \gamma)$ or $(\pi - \gamma, \pi - \delta_B)$}
+  \end{center}
+\end{frame}
+
+\begin{frame}[fragile]{$D$ decays to a $C\!P$ eigenstate}
+  \begin{center}
+    Naively, we expect the size of CPV effects to be around $r_B\approx10\%$\\~\\
+    For $C\!P$ eigenstates, $\mathcal{A}_{D^0} = \mathcal{A}_{\bar{D^0}}$
+  \end{center}
+  \begin{equation*}
+    \begin{tikzcd}[column sep=huge]
+      & D^0K^- \arrow[dr, bend left = 25, "\mathcal{A}_{D^0}"] & \\
+      B^- \arrow[ur, bend left, line width = 1.7, "\mathcal{A}_B"] \arrow[dr, bend right, "\mathcal{A}_B r_B e^{i(\delta_B - \gamma)}"'] & [5cm] & DK^- \\
+      & \bar{D^0}K^- \arrow[ur, bend right = 25, "\mathcal{A}_{D^0}"'] & \\
+    \end{tikzcd}
+  \end{equation*}
+  \begin{equation*}
+    \lvert\mathcal{A}(B^-)\lvert^2\propto1 + r_B^2 + 2r_B\cos(\delta_B - \gamma)
+  \end{equation*}
+  \begin{center}
+    4-fold degeneracy: $(\gamma, \delta_B)\to(\delta_B, \gamma)$ or $(\pi - \gamma, \pi - \delta_B)$
+  \end{center}
 \end{frame}
 
 \begin{frame}{$D$ decays to a $C\!P$ eigenstate}
@@ -1252,19 +1278,62 @@
 
 \begin{frame}[fragile]{Doubly Suppressed Cabibbo $D$ decays}
   \begin{center}
-    Interference effects can be greatly enhanced\\~\\
-    Use a Doubly Suppressed Cabibbo decay: $\mathcal{A}_{D^0} = r_De^{i\delta_D}\mathcal{A}_{\bar{D^0}}$
+    Asymmetries can be enhanced with a DCS decay: $\mathcal{A}_{D^0} = r_De^{i\delta_D}\mathcal{A}_{\bar{D^0}}$\\~\\
+    Interference between CF and DCS decays
   \end{center}
   \begin{equation*}
     \begin{tikzcd}[column sep=huge]
-      & D^0K^- \arrow[dr, bend left = 25, "r_De^{i\delta_D}\mathcal{A}_{\bar{D^0}}"] & \\
-      B^- \arrow[ur, bend left, line width = 1.7, "\mathcal{A}_B"] \arrow[dr, bend right, "\mathcal{A}_B r_B e^{i(\delta_B - \gamma)}"'] & [5cm] & DK^- \\
+      & D^0K^- \arrow[dr, bend left = 25, "r_De^{i\delta_D}\mathcal{A}_{\bar{D^0}}\quad (r_D\approx0.06)"] & \\
+      B^- \arrow[ur, bend left, line width = 1.7, "\mathcal{A}_B"] \arrow[dr, bend right, "(r_B\approx0.1)\quad\mathcal{A}_B r_B e^{i(\delta_B - \gamma)}"'] & [5cm] & DK^- \\
       & \bar{D^0}K^- \arrow[ur, bend right = 25, line width = 1.7, "\mathcal{A}_{\bar{D^0}}"'] & \\
     \end{tikzcd}
   \end{equation*}
   \begin{equation*}
     \lvert\mathcal{A}(B^-)\lvert^2\propto r_D^2 + r_B^2 + 2r_Br_D\cos(\delta_B - \gamma + \delta_D)
   \end{equation*}
+  \begin{center}
+    \phantom{Almost 4-fold degeneracy since $\delta_D\approx180^\circ()$}
+  \end{center}
+\end{frame}
+
+\begin{frame}[fragile]{Doubly Suppressed Cabibbo $D$ decays}
+  \begin{center}
+    Asymmetries can be enhanced with a DCS decay: $\mathcal{A}_{D^0} = r_De^{i\delta_D}\mathcal{A}_{\bar{D^0}}$\\~\\
+    Interference between CF and DCS decays
+  \end{center}
+  \begin{equation*}
+    \begin{tikzcd}[column sep=huge]
+      & D^0K^- \arrow[dr, bend left = 25, "r_De^{i\delta_D}\mathcal{A}_{\bar{D^0}}\quad (r_D\approx0.06)"] & \\
+      B^- \arrow[ur, bend left, line width = 1.7, "\mathcal{A}_B"] \arrow[dr, bend right, "(r_B\approx0.1)\quad\mathcal{A}_B r_B e^{i(\delta_B - \gamma)}"'] & [5cm] & DK^- \\
+      & \bar{D^0}K^- \arrow[ur, bend right = 25, line width = 1.7, "\mathcal{A}_{\bar{D^0}}"'] & \\
+    \end{tikzcd}
+  \end{equation*}
+  \begin{equation*}
+    \lvert\mathcal{A}(B^-)\lvert^2\propto r_D^2 + r_B^2 + 2r_Br_D\cos(\delta_B - \gamma + \delta_D)
+  \end{equation*}
+  \begin{center}
+    $r_D\approx\tan^2(\theta_c)$ due to CKM suppression
+  \end{center}
+\end{frame}
+
+\begin{frame}[fragile]{Doubly Suppressed Cabibbo $D$ decays}
+  \begin{center}
+    Asymmetries can be enhanced with a DCS decay: $\mathcal{A}_{D^0} = r_De^{i\delta_D}\mathcal{A}_{\bar{D^0}}$\\~\\
+    Interference between CF and DCS decays
+  \end{center}
+  \begin{equation*}
+    \begin{tikzcd}[column sep=huge]
+      & D^0K^- \arrow[dr, bend left = 25, "r_De^{i\delta_D}\mathcal{A}_{\bar{D^0}}\quad (r_D\approx0.06)"] & \\
+      B^- \arrow[ur, bend left, line width = 1.7, "\mathcal{A}_B"] \arrow[dr, bend right, "(r_B\approx0.1)\quad\mathcal{A}_B r_B e^{i(\delta_B - \gamma)}"'] & [5cm] & DK^- \\
+      & \bar{D^0}K^- \arrow[ur, bend right = 25, line width = 1.7, "\mathcal{A}_{\bar{D^0}}"'] & \\
+    \end{tikzcd}
+  \end{equation*}
+  \begin{equation*}
+    \lvert\mathcal{A}(B^-)\lvert^2\propto r_D^2 + r_B^2 + 2r_Br_D\cos(\delta_B - \gamma + \delta_D)
+  \end{equation*}
+  \begin{center}
+    Almost 4-fold degeneracy since $\delta_D\approx180^\circ$\phantom{$()$}
+  \end{center}
 \end{frame}
 
 \begin{frame}{Doubly Suppressed Cabibbo $D$ decays}
@@ -1287,7 +1356,78 @@
   \vspace{-0.5cm}
   \begin{center}
     \Large $B^\pm\to[K^\mp\pi^\pm]_DK^\pm$ has lower statistics, but a spectacular asymmetry!\\~\\
-    \large Additionally, the partially reconstructed background also has an asymmetry
+    \large Note: Total branching fraction is $5.5\times10^{-8}$!
+  \end{center}
+\end{frame}
+
+\begin{frame}{Doubly Suppressed Cabibbo $D$ decays}
+  \begin{figure}
+    \centering
+    \begin{subfigure}{0.5\textwidth}
+      \begin{overpic}[percent,width = 1.0\textwidth]{Plots/B2DK_D2Kpi_Minus.pdf}
+        \put(80,25){\large$B^+$}
+        \put(100,-20){\vector(-1.0,0.7){55}}
+      \end{overpic}
+    \end{subfigure}%
+    \begin{subfigure}{0.5\textwidth}
+      \begin{overpic}[percent,width = 1.0\textwidth]{Plots/B2DK_D2Kpi_Plus.pdf}
+        \put(80,25){\large$B^-$}
+        \put(0,-20){\vector(1.0,1.7){30}}
+      \end{overpic}
+    \end{subfigure}
+    \caption*{\tiny JHEP \textbf{04} (2021) 081}
+  \end{figure}
+  \vspace{-0.37cm}
+  \begin{center}
+    \Large Large background from $B_s^0\to\bar{D}^{(*)0}K^-\pi^+$ with missing $\pi^+$\\~\\
+    \large Since $\bar{D}^{(*)0}$ has the opposite flavour to signal, it is \underline{Cabibbo favoured}
+  \end{center}
+  \vspace{0.5cm}
+\end{frame}
+
+\begin{frame}{Doubly Suppressed Cabibbo $D$ decays}
+  \begin{figure}
+    \centering
+    \begin{subfigure}{0.5\textwidth}
+      \begin{overpic}[percent,width = 1.0\textwidth]{Plots/B2DK_D2Kpi_Minus.pdf}
+        \put(25,43){\tikz\draw[red,line width=0.3mm](0.0,0.0)--(1.4,0.0);}
+        \put(25,30){\tikz\draw[red,line width=0.3mm](0.0,0.0)--(0.0,0.79);}
+        \put(48,30){\tikz\draw[red,line width=0.3mm](0.0,0.0)--(0.0,0.79);}
+        \put(25,30){\tikz\draw[red,line width=0.3mm](0.0,0.0)--(1.4,0.0);}
+        \put(80,25){\large$B^+$}
+      \end{overpic}
+    \end{subfigure}%
+    \begin{subfigure}{0.5\textwidth}
+      \begin{overpic}[percent,width = 1.0\textwidth]{Plots/B2DK_D2Kpi_Plus.pdf}
+        \put(25,43){\tikz\draw[red,line width=0.3mm](0.0,0.0)--(1.4,0.0);}
+        \put(25,30){\tikz\draw[red,line width=0.3mm](0.0,0.0)--(0.0,0.79);}
+        \put(48,30){\tikz\draw[red,line width=0.3mm](0.0,0.0)--(0.0,0.79);}
+        \put(25,30){\tikz\draw[red,line width=0.3mm](0.0,0.0)--(1.4,0.0);}
+        \put(80,25){\large$B^-$}
+      \end{overpic}
+    \end{subfigure}
+    \caption*{\tiny JHEP \textbf{04} (2021) 081}
+  \end{figure}
+  \vspace{-0.365cm}
+  \begin{center}
+    \Large Asymmetry is also seen in the double-peaked background\\~\\
+    \large Partially reconstructed $B^\pm\to D^*K^\pm$ decays, where $D^*\to D^0\pi^0$
+  \end{center}
+  \vspace{0.5cm}
+\end{frame}
+
+\begin{frame}{Combined CP eigenstate and DCS decays}
+  \begin{figure}
+    \centering
+    \begin{overpic}[percent,width=0.6\textwidth]{Plots/Two_body_contours.pdf}
+    \end{overpic}
+    \vspace{-0.8cm}
+    \caption*{\tiny JHEP \textbf{04} (2021) 081}
+  \end{figure}
+  \vspace{-0.5cm}
+  \begin{center}
+    \Large 4 solutions from CP eigenstates and DCS decays\\
+    \large Need further inputs to resolve this degeneracy
   \end{center}
 \end{frame}
 
@@ -1316,10 +1456,84 @@
   \end{enumerate}
 \end{frame}
 
+\begin{frame}{Multi-body $D$ decays}
+  \begin{itemize}
+    \setlength\itemsep{0.5em}
+    \item{Multi-body decays can have many intermediate resonances}
+    \item{Decay amplitudes therefore vary across ``phase space''}
+  \end{itemize}
+  \begin{center}
+    \begin{minipage}{0.6\textwidth}
+      \begin{block}{\centering Degrees of freedom for an $N$-body decay}
+        \vspace{-0.5cm}
+        \begin{align*}
+          &4N \text{ (momentum components)} \\
+          -\;&N \text{ ($E_i^2-p_i^2=m_i^2$)} \\
+          -\;&4 \text{ (energy-momentum conservation)} \\
+          -\;&3 \text{ (choice of frame)} \\[-0.3cm]
+          \cline{1-2}\\[-0.7cm]
+          =\;&3N-7 \text{ degrees of freedom}
+        \end{align*}
+      \end{block}
+    \end{minipage}
+  \end{center}
+\end{frame}
+
+\begin{frame}{Multi-body $D$ decays}
+  \begin{center}
+    {\large For 3-body decays, phase space is two-dimensional: Dalitz plots}
+  \end{center}
+  \begin{figure}
+    \begin{overpic}[percent,width=0.5\textwidth]{Plots/KSpipi_Minus_Dalitz.png}
+      \put(55,67){\small $D^0\to K_S^0\pi^+\pi^-$}
+    \end{overpic}
+    \vspace{-0.5cm}
+    \caption*{\tiny JHEP \textbf{02} (2021) 169}
+  \end{figure}
+  \vspace{-0.4cm}
+\end{frame}
+
+\begin{frame}{Multi-body $D$ decays}
+  \begin{center}
+    {\large For 3-body decays, phase space is two-dimensional: Dalitz plots}
+  \end{center}
+  \begin{figure}
+    \begin{overpic}[percent,width=0.5\textwidth]{Plots/KSpipi_Minus_Dalitz.png}
+      \put(35,93){\vector(0.0,-1.0){13}}
+      \put(107,93){\line(-1.0,0.0){72}}
+      \put(110,90){$D^0\to K^{*-}\pi^+$}
+      \put(55,67){\small $D^0\to K_S^0\pi^+\pi^-$}
+    \end{overpic}
+    \vspace{-0.5cm}
+    \caption*{\tiny JHEP \textbf{02} (2021) 169}
+  \end{figure}
+  \vspace{-0.4cm}
+\end{frame}
+
+\begin{frame}{Multi-body $D$ decays}
+  \begin{center}
+    {\large For 3-body decays, phase space is two-dimensional: Dalitz plots}
+  \end{center}
+  \begin{figure}
+    \begin{overpic}[percent,width=0.5\textwidth]{Plots/KSpipi_Minus_Dalitz.png}
+      \put(35,93){\vector(0.0,-1.0){13}}
+      \put(107,93){\line(-1.0,0.0){72}}
+      \put(110,90){$D^0\to K^{*-}\pi^+$}
+      \put(12,93){\vector(1.0,-1.0){13}}
+      \put(12,93){\line(-1.0,0.0){27}}
+      \put(-30,90){$K_S^0\rho^0$}
+      \put(55,67){\small $D^0\to K_S^0\pi^+\pi^-$}
+    \end{overpic}
+    \vspace{-0.5cm}
+    \caption*{\tiny JHEP \textbf{02} (2021) 169}
+  \end{figure}
+  \vspace{-0.4cm}
+\end{frame}
+
 \begin{frame}[fragile]{Multi-body $D$ decays}
   \begin{center}
-    The three-body $D$-decay phase space is two-dimensional $\implies$ Dalitz plot\\~\\
-    $B^\pm$ decay rate depends on the $D^0$ and $\bar{D^0}$ strong-phase difference
+    $B^\pm$ decay rate depends on the phase space position $\Phi$\\~\\
+    More importantly, the asymmetries across the Dalitz plot depend on the $D^0$ and $\bar{D^0}$ strong-phase difference $\delta_D$
   \end{center}
   \begin{equation*}
     \begin{tikzcd}[column sep=huge]
@@ -1445,15 +1659,15 @@
   \end{figure}
 \end{frame}
 
-\section{The LHCb \texorpdfstring{$\gamma$}{gamma} and charm combination}
-\begin{frame}{The LHCb $\gamma$ and charm combination}
+\section{The LHCb \texorpdfstring{$\gamma$}{gamma} combination}
+\begin{frame}{The LHCb $\gamma$ combination}
   \begin{center}
-    {\huge The LHCb $\gamma$ and charm combination}\\~\\
-    {\large Lots of beauty in charm!}
+    {\huge The LHCb $\gamma$ combination}\\~\\
+    {\large How to combine a decade of $\gamma$ measurements}
   \end{center}
 \end{frame}
 
-\begin{frame}{The LHCb $\gamma$ and charm combination}
+\begin{frame}{The LHCb $\gamma$ combination}
   \begin{figure}
     \begin{overpic}[percent,width=0.7\textwidth]{Plots/gammacharm_lhcb_dhch_g_r_dk_2021.pdf}
     \end{overpic}
@@ -1465,7 +1679,7 @@
   \end{center}
 \end{frame}
 
-\begin{frame}{The LHCb $\gamma$ and charm combination}
+\begin{frame}{The LHCb $\gamma$ combination}
   \begin{figure}
     \begin{overpic}[percent,width=0.7\textwidth]{Plots/gammacharm_lhcb_dhch_g_r_dk_2021.pdf}
       \put(5,-8){\vector(1.0,1.2){32}}
@@ -1475,11 +1689,11 @@
     \caption*{\tiny JHEP \textbf{12} (2021) 141}
   \end{figure}
   \begin{center}
-    Two-body decays: Narrow bands, but many degenerate solutions
+    CP eigenstates and DCS decays: Narrow bands of degenerate solutions
   \end{center}
 \end{frame}
 
-\begin{frame}{The LHCb $\gamma$ and charm combination}
+\begin{frame}{The LHCb $\gamma$ combination}
   \begin{figure}
     \begin{overpic}[percent,width=0.7\textwidth]{Plots/gammacharm_lhcb_dhch_g_r_dk_2021.pdf}
       \put(25,-8){\vector(1.0,1.7){20}}
@@ -1492,7 +1706,7 @@
   \end{center}
 \end{frame}
 
-\begin{frame}{The LHCb $\gamma$ and charm combination}
+\begin{frame}{The LHCb $\gamma$ combination}
   \begin{figure}
     \begin{overpic}[percent,width=0.7\textwidth]{Plots/gammacharm_lhcb_dhch_g_r_dk_2021.pdf}
     \end{overpic}
@@ -1504,7 +1718,7 @@
   \end{center}
 \end{frame}
 
-\begin{frame}{The LHCb $\gamma$ and charm combination}
+\begin{frame}{The LHCb $\gamma$ combination}
   \begin{center}
     \Large Other $B$ decays are also interesting for $\gamma$ measurements:
   \end{center}
@@ -1526,7 +1740,7 @@
   \end{columns}
 \end{frame}
 
-\begin{frame}{The LHCb $\gamma$ and charm combination}
+\begin{frame}{The LHCb $\gamma$ combination}
   \begin{center}
     \Large Other $B$ decays are also interesting for $\gamma$ measurements:
   \end{center}
@@ -1548,7 +1762,7 @@
   \end{columns}
 \end{frame}
 
-\begin{frame}{The LHCb $\gamma$ and charm combination}
+\begin{frame}{The LHCb $\gamma$ combination}
   \begin{center}
     \Large Other $B$ decays are also interesting for $\gamma$ measurements:
   \end{center}
@@ -1570,7 +1784,7 @@
   \end{columns}
 \end{frame}
 
-\begin{frame}{The LHCb $\gamma$ and charm combination}
+\begin{frame}{The LHCb $\gamma$ combination}
   \begin{center}
     \Large Other $B$ decays are also interesting for $\gamma$ measurements:
   \end{center}
@@ -1582,7 +1796,7 @@
         \item{$B^\pm\to DK^\pm$ $\leftarrow$ Golden mode}
         \item{$B^\pm\to D^{*0}K^\pm$ $\leftarrow$ New results!}
         \item{$B^0\to DK^{*0}$ $\leftarrow$ New results!}
-        \item{$B_s^0\to D_s^-K^+$ $\leftarrow$ Not covered today}
+        \item{$B_s^0\to D_s^-K^+$ $\leftarrow$ Coming soon}
         \item[-]{And many more...}
       \end{enumerate}
       \vspace{1.5cm}
@@ -1592,7 +1806,7 @@
   \end{columns}
 \end{frame}
 
-\begin{frame}{The LHCb $\gamma$ and charm combination}
+\begin{frame}{The LHCb $\gamma$ combination}
   \begin{center}
     \Large Other $B$ decays are also interesting for $\gamma$ measurements:
   \end{center}
@@ -1612,46 +1826,115 @@
     \begin{column}{0.6\textwidth}
       \begin{figure}
         \centering
-        \includegraphics[width=0.8\textwidth]{Plots/gammacharm_lhcb_comp_flavour.pdf}
-        \vspace{-0.5cm}
-        \caption*{\tiny\href{https://lhcbproject.web.cern.ch/Publications/LHCbProjectPublic/LHCb-CONF-2022-003.html}{LHCb-CONF-2022-003}}
+        \caption*{Most Run 1 and 2 measurements are included, but today I will also report on several new results}
+        \includegraphics[width=0.8\textwidth,trim={0 10.34cm 0 0},clip=true]{Plots/Modes_chi2_gammacharm.pdf}
+        \vspace{-0.2cm}
+        \caption*{\tiny LHCb-CONF-2022-003}
       \end{figure}
     \end{column}
   \end{columns}
 \end{frame}
 
-\begin{frame}{The LHCb $\gamma$ and charm combination}
+\begin{frame}{The LHCb $\gamma$ combination}
   \begin{center}
-    {\Large Our most precise knowledge of $\gamma$ comes from the combination of $\gamma$ and charm mixing parameters}\\~\\
+    \Large Other $B$ decays are also interesting for $\gamma$ measurements:
+  \end{center}
+  \vspace{0.2cm}
+  \begin{columns}
+    \begin{column}{0.4\textwidth}
+      \vspace{1.5cm}
+      \begin{enumerate}
+        \item{$B^\pm\to DK^\pm$}
+        \item{$B^\pm\to D^{*0}K^\pm$}
+        \item{$B^0\to DK^{*0}$}
+        \item{$B_s^0\to D_s^-K^+$}
+        \item[-]{And many more...}
+      \end{enumerate}
+      \vspace{1.5cm}
+    \end{column}
+    \begin{column}{0.6\textwidth}
+      \begin{figure}
+        \centering
+        \begin{overpic}[percent,width=0.8\textwidth]{Plots/gammacharm_lhcb_comp_flavour.pdf}
+          \put(13,80){\vector(1.0,-0.5){30}}
+          \put(13,80){\vector(1.0,-0.25){58}}
+          \put(-100,82){Small ($2.2\sigma$) tension between $B^\pm$ and $B^0$, which is believed to be statistical}
+        \end{overpic}
+        \vspace{-0.5cm}
+        \caption*{\tiny LHCb-CONF-2022-003}
+      \end{figure}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{The LHCb $\gamma$ combination}
+  \begin{center}
+    {\Large Our most precise knowledge of $\gamma$ comes from the combination measurements}\\~\\
   \end{center}
   \vspace{-0.5cm}
   \begin{figure}
     \includegraphics[height=5.0cm]{Plots/gammacharm_lhcb_gamma_only.pdf}
     \vspace{-0.5cm}
-    \caption*{\tiny\href{https://lhcbproject.web.cern.ch/Publications/LHCbProjectPublic/LHCb-CONF-2022-003.html}{LHCb-CONF-2022-003}}
+    \caption*{\tiny LHCb-CONF-2022-003}
   \end{figure}
-  \vspace{-0.5cm}
+  \vspace{-0.465cm}
   \begin{center}
     This is the most precise determination of $\gamma$ by a single experiment!\\
-    Charged $B^\pm$ modes dominate, but all measurements are consistent \phantom{$\delta_D^{K\pi}$}
+    We also benefit from BESIII strong-phase and charm-mixing measurements
   \end{center}
 \end{frame}
 
-\begin{frame}{The LHCb $\gamma$ and charm combination}
+\begin{frame}{The LHCb $\gamma$ combination}
   \begin{center}
-    {\Large Our most precise knowledge of $\gamma$ comes from the combination of $\gamma$ and charm mixing parameters}\\~\\
+    {\Large Our most precise knowledge of $\gamma$ comes from the combination measurements}\\~\\
   \end{center}
   \vspace{-0.5cm}
   \begin{figure}
-    \includegraphics[height=5.0cm]{Plots/gammacharm_lhcb_xD_yD.pdf}
+    \includegraphics[height=5.0cm]{Plots/gammacharm_lhcb_gamma_only.pdf}
     \vspace{-0.5cm}
-    \caption*{\tiny\href{https://lhcbproject.web.cern.ch/Publications/LHCbProjectPublic/LHCb-CONF-2022-003.html}{LHCb-CONF-2022-003}}
+    \caption*{\tiny LHCb-CONF-2022-003}
   \end{figure}
-  \vspace{-0.5cm}
+  \vspace{-0.62cm}
   \begin{center}
-    Mixing effects to $\gamma$ measurements are approaching the statistical sensitivity\\
-    Knowledge of $y$ is significantly improved through correlations with $\delta_D^{K\pi}$
+    Combined result: \colorbox{Cerulean!30}{$\gamma = (63.8^{+3.5}_{-3.7})^\circ$}\\
+    Run 2 target: $\Delta\gamma = 4^\circ$ $\rightarrow$ We did better than expected!
   \end{center}
+\end{frame}
+
+\begin{frame}{The LHCb $\gamma$ combination}
+  \begin{center}
+    {\Large Our most precise knowledge of $\gamma$ comes from the combination measurements}\\~\\
+  \end{center}
+  \vspace{-0.5cm}
+  \begin{figure}
+    \includegraphics[height=5.0cm]{Plots/gammacharm_lhcb_gamma_only.pdf}
+    \vspace{-0.5cm}
+    \caption*{\tiny LHCb-CONF-2022-003}
+  \end{figure}
+  \vspace{-0.62cm}
+  \begin{center}
+    Combined result: \colorbox{Cerulean!30}{$\gamma = (63.8^{+3.5}_{-3.7})^\circ$}\\
+    Compare with Belle: $\gamma = (77.3^{+16.2}_{-16.0})^\circ$ Phys. Rev. D \textbf{85} (2012) 112014
+  \end{center}
+  \vspace{-0.15cm}
+\end{frame}
+
+\begin{frame}{The LHCb $\gamma$ combination}
+  \begin{center}
+    {\Large Our most precise knowledge of $\gamma$ comes from the combination measurements}\\~\\
+  \end{center}
+  \vspace{-0.5cm}
+  \begin{figure}
+    \includegraphics[height=5.0cm]{Plots/gammacharm_lhcb_gamma_only.pdf}
+    \vspace{-0.5cm}
+    \caption*{\tiny LHCb-CONF-2022-003}
+  \end{figure}
+  \vspace{-0.62cm}
+  \begin{center}
+    Combined result: \colorbox{Cerulean!30}{$\gamma = (63.8^{+3.5}_{-3.7})^\circ$}\\
+    Compare with BaBar: $\gamma = (69^{+17}_{-16})^\circ$ Phys. Rev. D \textbf{87} (2013) 052015
+  \end{center}
+  \vspace{-0.15cm}
 \end{frame}
 
 \section{Neutral \texorpdfstring{$B$}{B} decays}
@@ -1701,6 +1984,78 @@
   \end{center}
   \begin{center}
   {\large This results supersedes that of JHEP \textbf{08} (2016) 137}
+  \end{center}
+\end{frame}
+
+\begin{frame}{Neutral $B$ decays}
+  \begin{center}
+    \Large In $B^0\to DK^{*0}$, there is no relative colour suppression
+  \end{center}
+  \vspace{0.5cm}
+  \begin{figure}[H]
+    \centering
+    \begin{subfigure}{0.5\textwidth}
+      \centering
+      \begin{fmffile}{fgraph/fgraph_B0toDbarK}
+        \setlength{\unitlength}{0.4cm}
+        \begin{fmfgraph*}(6,6)
+          \fmfstraight
+          \fmfleft{i1,t1,t2,B,t9,t10,i2}
+          \fmfright{o1,K,o2,t4,t5,o3,D,o4}
+          \fmflabel{$\bar{d}$}{i1}
+          \fmflabel{$b$}{i2}
+          \fmfv{l.d=20,l.a=180,l={$B^0$\mylbrace{100}{-8}}}{B}
+          \fmflabel{$\bar{d}$}{o1}
+          \fmflabel{$s$}{o2}
+          \fmflabel{$\bar{c}$}{o3}
+          \fmflabel{$u$}{o4}
+          \fmfv{l.d=15,l.a=0,l={\myrbrace{30}{13}}$\bar{D^0}$}{D}
+          \fmfv{l.d=15,l.a=0,l={\myrbrace{30}{-13}}$K^{*0}$}{K}
+          \fmf{fermion}{o1,i1}
+          \fmf{fermion,tension=1.5}{i2,v1}
+          \fmf{fermion}{v1,o4}
+          \fmf{phantom,tension=1.5}{t2,v2}
+          \fmf{boson,label=$W$,label.side=left,tension=0}{v1,v2}
+          \fmf{fermion}{v2,o2}
+          \fmf{fermion}{o3,v2}
+        \end{fmfgraph*}
+      \end{fmffile}
+      \vspace{0.5cm}
+      \caption*{Favoured $B^0\to\bar{D^0}K^{*0}$}
+    \end{subfigure}%
+    \begin{subfigure}{0.5\textwidth}
+      \centering
+      \begin{fmffile}{fgraph/fgraph_B0toDK}
+        \setlength{\unitlength}{0.4cm}
+        \begin{fmfgraph*}(6,6)
+          \fmfstraight
+          \fmfleft{i1,t1,t2,B,t9,t10,i2}
+          \fmfright{o1,K,o2,t4,t5,o3,D,o4}
+          \fmflabel{$\bar{d}$}{i1}
+          \fmflabel{$b$}{i2}
+          \fmfv{l.d=20,l.a=180,l={$B^0$\mylbrace{100}{-8}}}{B}
+          \fmflabel{$\bar{d}$}{o1}
+          \fmflabel{$s$}{o2}
+          \fmflabel{$\bar{u}$}{o3}
+          \fmflabel{$c$}{o4}
+          \fmfv{l.d=15,l.a=0,l={\myrbrace{30}{13}}$D^0$}{D}
+          \fmfv{l.d=15,l.a=0,l={\myrbrace{30}{-13}}$K^{*0}$}{K}
+          \fmf{fermion}{o1,i1}
+          \fmf{fermion,tension=1.5}{i2,v1}
+          \fmf{fermion}{v1,o4}
+          \fmf{phantom,tension=1.5}{t2,v2}
+          \fmf{boson,label=$W$,label.side=left,tension=0}{v1,v2}
+          \fmf{fermion}{v2,o2}
+          \fmf{fermion}{o3,v2}
+        \end{fmfgraph*}
+      \end{fmffile}
+      \vspace{0.5cm}
+      \caption*{CKM suppressed $B^0\to D^0K^{*0}$}
+    \end{subfigure}
+  \end{figure}
+  \vspace{0.2cm}
+  \begin{center}
+    \large The interference is therefore expected to be $\sim 3$ times larger
   \end{center}
 \end{frame}
 
@@ -1836,11 +2191,6 @@
     \end{itemize}
   \end{itemize}
 \end{frame}
-
-
-
-
-
 
 \section{\texorpdfstring{$B$}{B} decays to excited \texorpdfstring{$D^*$}{Dst} final states}
 \begin{frame}{B decays to excited $D^*$ final states}

@@ -43,45 +43,45 @@ slide 25: Why is gamma hard: B->DK is suppressed, and interference is small
 x slide 26: "severla methods are used to measure gamma precisely
 x slide 26: Put GLW in brackets with reference
 x slide 32: self-conjugate multi-body
-slide 30: put values of rB and rD on the diagram
-slide 30: mention that it's the interference of DCS and CF
+x slide 30: put values of rB and rD on the diagram
+x slide 30: mention that it's the interference of DCS and CF
 x slide 28: large B+ and B-, and use a line to show the asymmetry
-slide 27: mention that we cannot get a unique value of gamma
-slide 31: slide with contours of gamma from Donal's paper
+x slide 27: mention that we cannot get a unique value of gamma
+x slide 31: slide with contours of gamma from Donal's paper
 slide 30: discuss rD and deltaD and where we take them from
-slide 31: spend more time explaining what partially reconstructed is and point out with lines and box, and why Dstar has opposite asymmetry
+x slide 31: spend more time explaining what partially reconstructed is and point out with lines and box, and why Dstar has opposite asymmetry
 slide 31: mention that i will talk about the part reco later
-slide 31: mention the low BF of DCS Kpi and why the B factories could not see this
-slide 31: discuss features of the low mass background, low mid ID, low combinatorial
+x slide 31: mention the low BF of DCS Kpi and why the B factories could not see this
+x slide 31: discuss features of the low mass background, low mid ID, low combinatorial
 x slide 28: show how large the mid ID from Dpi would be without PID
 slide 28: simplified legend or arrows to point out what the different things are
-slide 28: show the Dpi plots first and talk through the detector features
-slide 33: what is phi?
-slide 33: what is dalitz plot?
-slide 33: Discuss how many degrees of freedom an N body decay has
-slide 36: explain the features of the dalitz plot (Kstar resonance and KS)
-slide 36: explain more clearly what a dalitz plot is (resonances and structures)
+x slide 28: show the Dpi plots first and talk through the detector features
+x slide 33: what is phi?
+x slide 33: what is dalitz plot?
+x slide 33: Discuss how many degrees of freedom an N body decay has
+x slide 36: explain the features of the dalitz plot (Kstar resonance and KS)
+x slide 36: explain more clearly what a dalitz plot is (resonances and structures)
 slide 37: how are bins defined and how are the ci/si measured
 slide 37: why do they need to be measured at CLEO and BESIII?
 slide 37: it's because the uncertainty can't be evaluated with the model
 slide 37: add a slide about model dependent vs independent, and make it explicit that LHCb uses model independnet inputs only
 slide 37: stress that gamma has zero theory uncertainty so we should not introduce one with the model
 slide 37: make it clear that the measurement doesn't depend on detection and production asymmetries, and that the systematics are small!
-slide 38: remove the mention of charm
+x slide 38: remove the mention of charm
 slide 39: update plot and just mention that there's another "lobe", or show both
-slide 41: Remove accronyms and typo "unique"
-slide 46: "not covered today" -> "coming soon"
-slide 48: need to highlight the value on the plot
-slide 48: this is better than the target for run 2
-slide 48: mention the legacy measurements from babar and belle
-Remove slide 49 and mention all mention of charm
-DON'T MENTION CHARM!
-slide 48: copy the table from the CONF note with all the different B modes, and that most of it is there but I will report on the new results
-slide 47: highlight the small tension and say it's statistical
-slide 48: "combination of gamma" -> "combination of measurmeents"
-slide 48: mention in small writing that we benefit from BESIII and charm mixing inputs
+x slide 41: Remove accronyms and typo "unique"
+x slide 46: "not covered today" -> "coming soon"
+x slide 48: need to highlight the value on the plot
+x slide 48: this is better than the target for run 2
+x slide 48: mention the legacy measurements from babar and belle
+x Remove slide 49 and mention all mention of charm
+x DON'T MENTION CHARM!
+x slide 48: copy the table from the CONF note with all the different B modes, and that most of it is there but I will report on the new results
+x slide 47: highlight the small tension and say it's statistical
+x slide 48: "combination of gamma" -> "combination of measurmeents"
+x slide 48: mention in small writing that we benefit from BESIII and charm mixing inputs
 slide 47: give a quick tease about a new B0 measurement that resolves the tension
-slide 51: diagram of why there is more interference
+x slide 51: diagram of why there is more interference
 slide 52: visualise where LL and DD tracks are different
 slide 53: remove
 slide 54: remove
