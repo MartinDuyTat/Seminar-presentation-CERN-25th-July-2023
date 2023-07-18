@@ -1,5 +1,5 @@
 too specialised
-Don't use GLW, ADS, BPGGSZ
+x Don't use GLW, ADS, BPGGSZ
 big picture at the start, with which measurements
 x cabbibo -> cabibbo
 need more explaining, too much flavour physics
@@ -7,11 +7,11 @@ more conclusion and general interest for people outside of lhcb
 x slide 12: mention that this is before b factories
 x slide 16: stress that we want to overconstrain the UT
 slide 16: why is it a challenge even though it's a tree level, and why is lhcb doing so well on this
-mention that 4 degrees is the target for run 2
+x mention that 4 degrees is the target for run 2
 use more colours
-spend more time explaining how charm factories can measure strong phases
-explain why the strong phase of Dpi0 and Dgamma is opposite
-slide 58: cite paper by Bondar
+x spend more time explaining how charm factories can measure strong phases
+x explain why the strong phase of Dpi0 and Dgamma is opposite
+x slide 58: cite paper by Bondar
 Slide 2: need an overview slide with where we are as a collaboration before this slide, make it clear it's run 1 and 2
 x slide 6: discuss sakhrarov condidations are how it connects antimatter asymmetry to CPV
 x slide 8: rephrase because we already know SM can't explain the asymmetry
@@ -21,7 +21,7 @@ x mention that 2008 nobel prize was for cp violation
 x slide 10: "in the SM, with only 3 generations, V must be unitary"
 slide 10: mention that since it adds to zero it is a triangle, mention that there are 6 triangle but only this one has large angles, and also mention the alternative defintions
 x between slide 12 and 13, add something about the other measurements of the UT (in particular sin(2beta) and the mixing measurements of B0/Bs)
-mention how beta is measured very well, and why alpha is difficult to measure at LHCb
+x mention how beta is measured very well, and why alpha is difficult to measure at LHCb
 x slide 12: no CPV meausurements in this plot from B factories!
 x slide 12: Add the whole evolution of the UT from ckmfitter, or just 2012 (pre lhcb)
 x slide 16: mention that we don't expect new physics at tree level, but we expect new particles in loops
@@ -61,14 +61,14 @@ x slide 33: what is dalitz plot?
 x slide 33: Discuss how many degrees of freedom an N body decay has
 x slide 36: explain the features of the dalitz plot (Kstar resonance and KS)
 x slide 36: explain more clearly what a dalitz plot is (resonances and structures)
-slide 37: how are bins defined and how are the ci/si measured
-slide 37: why do they need to be measured at CLEO and BESIII?
-slide 37: it's because the uncertainty can't be evaluated with the model
-slide 37: add a slide about model dependent vs independent, and make it explicit that LHCb uses model independnet inputs only
-slide 37: stress that gamma has zero theory uncertainty so we should not introduce one with the model
-slide 37: make it clear that the measurement doesn't depend on detection and production asymmetries, and that the systematics are small!
+x slide 37: how are bins defined and how are the ci/si measured
+x slide 37: why do they need to be measured at CLEO and BESIII?
+x slide 37: it's because the uncertainty can't be evaluated with the model
+x slide 37: add a slide about model dependent vs independent, and make it explicit that LHCb uses model independnet inputs only
+x slide 37: stress that gamma has zero theory uncertainty so we should not introduce one with the model
+x slide 37: make it clear that the measurement doesn't depend on detection and production asymmetries, and that the systematics are small!
 x slide 38: remove the mention of charm
-slide 39: update plot and just mention that there's another "lobe", or show both
+x slide 39: update plot and just mention that there's another "lobe", or show both
 x slide 41: Remove accronyms and typo "unique"
 x slide 46: "not covered today" -> "coming soon"
 x slide 48: need to highlight the value on the plot
@@ -108,9 +108,9 @@ slide 72: reference to Upgrade II
 x slide 72: mention trigger upgrade (fully software based)
 slide 72: current average doesn't include the new results yet
 slide 73: remind what the current combination of gamma is, and what new results are coming in (new slide)
-slide 74: forgot to add "on gamma"
-slide 74: mention that with software trigger the efficienices are much higher
-slide 72: point 2 B0 will really improve the precision and hopefully become competitive with B+
-slide 74: add the same ckmfitter plots again and show how we can reach loop level precision and match the indirect precision
-slide 74: indirect preicsion comes from lattice QCD so it will also improve!
+x slide 74: forgot to add "on gamma"
+x slide 74: mention that with software trigger the efficienices are much higher
+x slide 72: point 2 B0 will really improve the precision and hopefully become competitive with B+
+x slide 74: add the same ckmfitter plots again and show how we can reach loop level precision and match the indirect precision
+x slide 74: indirect preicsion comes from lattice QCD so it will also improve!
 Add UT fit plots somewhere
