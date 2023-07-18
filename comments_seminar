@@ -82,30 +82,30 @@ x slide 48: "combination of gamma" -> "combination of measurmeents"
 x slide 48: mention in small writing that we benefit from BESIII and charm mixing inputs
 slide 47: give a quick tease about a new B0 measurement that resolves the tension
 x slide 51: diagram of why there is more interference
-slide 52: visualise where LL and DD tracks are different
-slide 53: remove
-slide 54: remove
-slide 55: "we expect asymmetries to change across different bins"
-slide 55: "size"->"sign"
-slide 55: remove comment about Bs
-slide 55: expand on "CP obsrevables" (red line), spend more time explaining this
-slide 55: move this slide after slide 56
-slide 56: value of gamma is lower so is expected to bring the discrepancy down
-slide 56: "compatible with expectation that it should be 3 times larger"
-slide 58: explain sign swap
-slide 58: change pi to 180 degrees
-slide 58: bring back ADS plot
-slide 58: mention this has been measured in Donal's analysis
+x slide 52: visualise where LL and DD tracks are different
+x slide 53: remove
+x slide 54: remove
+x slide 55: "we expect asymmetries to change across different bins"
+x slide 55: "size"->"sign"
+x slide 55: remove comment about Bs
+x slide 55: expand on "CP obsrevables" (red line), spend more time explaining this
+x slide 55: move this slide after slide 56
+x slide 56: value of gamma is lower so is expected to bring the discrepancy down
+x slide 56: "compatible with expectation that it should be 3 times larger"
+x slide 58: explain sign swap
+x slide 58: change pi to 180 degrees
+x slide 58: bring back ADS plot
+x slide 58: mention this has been measured in Donal's analysis
 slide 58: mention in detector bit about the calorimeter
-slide 60: opposite asymmetries doesn't give any information, don't mention this
+x slide 60: opposite asymmetries doesn't give any information, don't mention this
 slide 61: show Donal's of Dst contours and anticipate the combination of the two which will provide very strong constraints for gamma
-slide 65: my explanation was the same as for KSpipi, play down the 5D phase space and focus on how we use the amplitud emodel to define the binning scheme
-slide 67: mention Q value
-slide 69: "inputs from charm threshold"
-slide 70: symmetric rB uncertainties
-slide 70: comment on the 3 sigma tension, but explain the model dependence
+x slide 65: my explanation was the same as for KSpipi, play down the 5D phase space and focus on how we use the amplitud emodel to define the binning scheme
+x slide 67: mention Q value
+x slide 69: "inputs from charm threshold"
+x slide 70: symmetric rB uncertainties
+x slide 70: comment on the 3 sigma tension, but explain the model dependence
 slide 72: reference to Upgrade II
-slide 72: mention trigger upgrade (fully software based)
+x slide 72: mention trigger upgrade (fully software based)
 slide 72: current average doesn't include the new results yet
 slide 73: remind what the current combination of gamma is, and what new results are coming in (new slide)
 slide 74: forgot to add "on gamma"
@@ -113,3 +113,4 @@ slide 74: mention that with software trigger the efficienices are much higher
 slide 72: point 2 B0 will really improve the precision and hopefully become competitive with B+
 slide 74: add the same ckmfitter plots again and show how we can reach loop level precision and match the indirect precision
 slide 74: indirect preicsion comes from lattice QCD so it will also improve!
+Add UT fit plots somewhere
