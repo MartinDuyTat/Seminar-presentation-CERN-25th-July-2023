@@ -1,22 +1,22 @@
 too specialised
 x Don't use GLW, ADS, BPGGSZ
-big picture at the start, with which measurements
+x big picture at the start, with which measurements
 x cabbibo -> cabibbo
-need more explaining, too much flavour physics
+x need more explaining, too much flavour physics
 more conclusion and general interest for people outside of lhcb
 x slide 12: mention that this is before b factories
 x slide 16: stress that we want to overconstrain the UT
-slide 16: why is it a challenge even though it's a tree level, and why is lhcb doing so well on this
+x slide 16: why is it a challenge even though it's a tree level, and why is lhcb doing so well on this
 x mention that 4 degrees is the target for run 2
 use more colours
 x spend more time explaining how charm factories can measure strong phases
 x explain why the strong phase of Dpi0 and Dgamma is opposite
 x slide 58: cite paper by Bondar
-Slide 2: need an overview slide with where we are as a collaboration before this slide, make it clear it's run 1 and 2
+x Slide 2: need an overview slide with where we are as a collaboration before this slide, make it clear it's run 1 and 2
 x slide 6: discuss sakhrarov condidations are how it connects antimatter asymmetry to CPV
 x slide 8: rephrase because we already know SM can't explain the asymmetry
 x slide 8: it's also important to understand the interactions between quarks and if the CKM matrix is unitary? Need a deeper understanding! Need to understand where to look for new physics, which may not have the CKM structure
-slide 10: leading order CKM matrix to the CPV terms, perhaps mention that before with 2x2 matrix there is no CPV, define lambda, rho, eta
+x slide 10: leading order CKM matrix to the CPV terms, perhaps mention that before with 2x2 matrix there is no CPV, define lambda, rho, eta
 x mention that 2008 nobel prize was for cp violation
 x slide 10: "in the SM, with only 3 generations, V must be unitary"
 slide 10: mention that since it adds to zero it is a triangle, mention that there are 6 triangle but only this one has large angles, and also mention the alternative defintions
@@ -34,12 +34,12 @@ x slide 16: replace result with the LHCb combination, or just remove slide compl
 x slide 17: Don't expect new physics at tree level
 x slide 20: run 1 and 2 lhcb detector
 x slide 22: how does the VELO and RICH improve the mass plots
-slide 22: mention the trigger and how it's improved
+x slide 22: mention the trigger and how it's improved
 x slide 23: identity particles from b and d decays
 x slide 25: "superposition when D and Dbar decay to the same final state"
 x slide 25: colour and CKM suppression
 x slide 25: split slide into two, much slower explanation with clear definitions of rB and deltaB
-slide 25: Why is gamma hard: B->DK is suppressed, and interference is small
+x slide 25: Why is gamma hard: B->DK is suppressed, and interference is small
 x slide 26: "severla methods are used to measure gamma precisely
 x slide 26: Put GLW in brackets with reference
 x slide 32: self-conjugate multi-body
@@ -48,13 +48,13 @@ x slide 30: mention that it's the interference of DCS and CF
 x slide 28: large B+ and B-, and use a line to show the asymmetry
 x slide 27: mention that we cannot get a unique value of gamma
 x slide 31: slide with contours of gamma from Donal's paper
-slide 30: discuss rD and deltaD and where we take them from
+x slide 30: discuss rD and deltaD and where we take them from
 x slide 31: spend more time explaining what partially reconstructed is and point out with lines and box, and why Dstar has opposite asymmetry
 slide 31: mention that i will talk about the part reco later
 x slide 31: mention the low BF of DCS Kpi and why the B factories could not see this
 x slide 31: discuss features of the low mass background, low mid ID, low combinatorial
 x slide 28: show how large the mid ID from Dpi would be without PID
-slide 28: simplified legend or arrows to point out what the different things are
+x slide 28: simplified legend or arrows to point out what the different things are
 x slide 28: show the Dpi plots first and talk through the detector features
 x slide 33: what is phi?
 x slide 33: what is dalitz plot?
@@ -96,7 +96,7 @@ x slide 58: explain sign swap
 x slide 58: change pi to 180 degrees
 x slide 58: bring back ADS plot
 x slide 58: mention this has been measured in Donal's analysis
-slide 58: mention in detector bit about the calorimeter
+x slide 58: mention in detector bit about the calorimeter
 x slide 60: opposite asymmetries doesn't give any information, don't mention this
 slide 61: show Donal's of Dst contours and anticipate the combination of the two which will provide very strong constraints for gamma
 x slide 65: my explanation was the same as for KSpipi, play down the 5D phase space and focus on how we use the amplitud emodel to define the binning scheme
@@ -104,13 +104,13 @@ x slide 67: mention Q value
 x slide 69: "inputs from charm threshold"
 x slide 70: symmetric rB uncertainties
 x slide 70: comment on the 3 sigma tension, but explain the model dependence
-slide 72: reference to Upgrade II
+x slide 72: reference to Upgrade II
 x slide 72: mention trigger upgrade (fully software based)
-slide 72: current average doesn't include the new results yet
-slide 73: remind what the current combination of gamma is, and what new results are coming in (new slide)
+x slide 72: current average doesn't include the new results yet
+x slide 73: remind what the current combination of gamma is, and what new results are coming in (new slide)
 x slide 74: forgot to add "on gamma"
 x slide 74: mention that with software trigger the efficienices are much higher
 x slide 72: point 2 B0 will really improve the precision and hopefully become competitive with B+
 x slide 74: add the same ckmfitter plots again and show how we can reach loop level precision and match the indirect precision
 x slide 74: indirect preicsion comes from lattice QCD so it will also improve!
-Add UT fit plots somewhere
+x Add UT fit plots somewhere

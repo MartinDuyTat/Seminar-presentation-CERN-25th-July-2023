@@ -20,7 +20,9 @@
   \usefonttheme{default}    % or try default, structurebold, ...
   \setbeamertemplate{navigation symbols}{}
   \setbeamertemplate{caption}[numbered]
-} 
+}
+
+\setbeamertemplate{page number in head/foot}[framenumber]
 
 \usepackage[english]{babel}
 \usepackage[utf8x]{inputenc}
@@ -85,6 +87,25 @@
 % \begin{frame}{Outline}
 %   \tableofcontents
 % \end{frame}
+
+\begin{frame}{Plan for this seminar}
+  \begin{center}
+    {\Large Plan for this seminar:}
+  \end{center}
+  \vspace{0.2cm}
+  \begin{enumerate}
+    \setlength\itemsep{1.0em}
+    \item{Overview of LHCb's current $\gamma$ determinations}
+    \item{The combination of $\gamma$ measurements to date (Run 1 and 2)}
+    \item{New Run 1 and 2 results:}
+    \begin{itemize}
+      \item{$B^0\to DK^*$, $D\to K_S^0h^+h^-$}
+      \item{$B^\pm\to D^*h^\pm$, $D\to K_S^0h^+h^-$}
+      \item{$B^\pm\to Dh^\pm$, $D\to K^+K^-\pi^+\pi^-$}
+    \end{itemize}
+    \item{Future prospects (Run 3 and beyond)}
+  \end{enumerate}
+\end{frame}
 
 \section{Introduction to \texorpdfstring{$C\!P$}{CP} violation}
 \begin{frame}{Introduction to $C\!P$ violation}
@@ -271,6 +292,35 @@
   \end{equation*}
   \vspace{0.53cm}
   \begin{center}
+    Expand $V_{\rm CKM}$ to first order in CPV terms: Wolfenstein parameterisation\\
+    Assume $\lambda\equiv\sin(\theta_c)$ is small
+  \end{center}
+  \vspace{0.5cm}
+  \begin{equation*}
+    V^{\phantom{*}}_{ud}\colorbox{Cerulean!30}{$V^*_{ub}$} + V^{\phantom{*}}_{cd}V^*_{cb} + \colorbox{Cerulean!30}{$V^{\phantom{*}}_{td}$}V^*_{tb} = 0
+  \end{equation*}
+  \vspace{0.85cm}
+\end{frame}
+
+\begin{frame}{The CKM matrix and the Unitary Triangle}
+  \begin{center}
+    The Cabibbo-Kobayashi-Maskawa matrix $V_{\rm CKM}$ has a single complex phase that is responsible for all CPV in SM
+  \end{center}
+  \begin{equation*}
+    \begin{bmatrix}
+      V_{ud} & V_{us} & V_{ub} \\
+      V_{cd} & V_{cs} & V_{cb} \\
+      V_{td} & V_{ts} & V_{tb}
+    \end{bmatrix} = 
+    \setlength{\arraycolsep}{0pt}
+    \begin{bmatrix}
+      1 - \lambda^2/2              & \lambda         & \colorbox{Cerulean!30}{$A\lambda^3(\rho - i\eta)$} \\
+      -\lambda                     & 1 - \lambda^2/2 & A\lambda^2 \\
+      \colorbox{Cerulean!30}{$A\lambda^3(1 - \rho - i\eta)$} & -A\lambda^2     & 1 \\
+    \end{bmatrix} + \mathcal{O}(\lambda^4)
+  \end{equation*}
+  \vspace{0.53cm}
+  \begin{center}
     In SM, with only 3 generations of quarks, $V_{\rm CKM}$ must be unitary\\
     This gives us 9 constraints, one of which is:
   \end{center}
@@ -434,6 +484,19 @@
 
 \begin{frame}{The CKM matrix and the Unitary Triangle}
   \begin{center}
+    Similar global fits have also been performed by UTfit, with similar results
+  \end{center}
+  \vspace{-0.2cm}
+  \begin{figure}
+    \begin{overpic}[percent,width=0.50\textwidth]{Plots/rhoeta-fullfit-sm_UTfit.png}
+    \end{overpic}
+    \vspace{-0.3cm}
+    \caption*{\centering\tiny http://www.utfit.org/UTfit/}
+  \end{figure}
+\end{frame}
+
+\begin{frame}{The CKM matrix and the Unitary Triangle}
+  \begin{center}
     \Large LHC seminar by P. Li and V. Jevtic on 13th June 2023:\\
     \Large Single most precise measurement of $\sin(2\beta)$
   \end{center}
@@ -476,13 +539,13 @@
   \end{center}
 \end{frame}
 
-% TODO: This slide is a block of text
 \begin{frame}{The CKM matrix and the Unitary Triangle}
   \begin{center}
     {\Large Why is the CKM angle $\gamma$ of interest?}
   \end{center}
+  \vspace{0.85cm}
   \begin{enumerate}
-    \setlength\itemsep{0.0em}
+    \setlength\itemsep{1.3em}
     \item{Negligible theoretical uncertainties: Ideal SM benchmark}
     \begin{itemize}
       \item{Hadronic parameters are free parameters}
@@ -493,7 +556,14 @@
     \end{itemize}
     \item{We want to \underline{overconstrain} the Unitary Triangle}
   \end{enumerate}
-  \vspace{-0.2cm}
+  \vspace{1.0cm}
+\end{frame}
+
+\begin{frame}{The CKM matrix and the Unitary Triangle}
+  \begin{center}
+    {\Large Why is the CKM angle $\gamma$ of interest?}
+  \end{center}
+  \vspace{-0.4cm}
   \begin{figure}
     \centering
     \begin{subfigure}{0.5\textwidth}
@@ -513,6 +583,7 @@
   \begin{center}
     With precise $\gamma$ measurements, we can compare with the indirect loop level measurements, which assume unitarity (``SM prediction'')
   \end{center}
+  \vspace{-0.4cm}
 \end{frame}
 
 \section{How to measure \texorpdfstring{$\gamma$}{gamma}?}
@@ -1002,6 +1073,86 @@
   \end{center}
 \end{frame}
 
+\begin{frame}{Sensitivity through interference}
+  \begin{center}
+    \Large Measure $\gamma$ through interference effects in $B^\pm\to DK^\pm$
+  \end{center}
+  \begin{figure}[H]
+    \centering
+    \begin{subfigure}{0.5\textwidth}
+      \centering
+      \begin{fmffile}{fgraph/fgraph_BtoDK1}
+        \setlength{\unitlength}{0.4cm}
+        \begin{fmfgraph*}(6,6)
+          \fmfstraight
+          \fmfleft{i1,B,i2,t1,t2,t3,t9,t10}
+          \fmfright{o1,D,o2,t4,t5,o3,K,o4}
+          \fmflabel{$\bar{u}$}{i1}
+          \fmflabel{$b$}{i2}
+          \fmfv{l.d=20,l.a=180,l={$B^-$\mylbrace{30}{-8}}}{B}
+          \fmflabel{$\bar{u}$}{o1}
+          \fmflabel{$c$}{o2}
+          \fmflabel{$\bar{u}$}{o3}
+          \fmflabel{$s$}{o4}
+          \fmfv{l.d=15,l.a=0,l={\myrbrace{30}{-12}}$D^0$}{D}
+          \fmfv{l.d=15,l.a=0,l={\myrbrace{30}{11}}$K^-$}{K}
+          \fmf{fermion}{o1,i1}
+          \fmf{fermion,tension=1.5}{i2,v1}
+          \fmf{fermion}{v1,o2}
+          \fmf{phantom,tension=1.5}{t9,v2}
+          \fmf{boson,label=$W$,label.side=left,tension=0}{v1,v2}
+          \fmf{fermion}{v2,o4}
+          \fmf{fermion}{o3,v2}
+        \end{fmfgraph*}
+      \end{fmffile}
+      \vspace{0.5cm}
+      \caption*{Favoured $B^-\to D^0K^-$}
+    \end{subfigure}%
+    \begin{subfigure}{0.5\textwidth}
+      \centering
+      \begin{fmffile}{fgraph/fgraph_BtoDK2}
+        \setlength{\unitlength}{0.4cm}
+        \begin{fmfgraph*}(6,6)
+          \fmfstraight
+          \fmfleft{i1,t1,t2,B,t9,t10,i2}
+          \fmfright{o1,K,o2,t4,t5,o3,D,o4}
+          \fmflabel{$\bar{u}$}{i1}
+          \fmflabel{$b$}{i2}
+          \fmfv{l.d=20,l.a=180,l={$B^-$\mylbrace{100}{-8}}}{B}
+          \fmflabel{$\bar{u}$}{o1}
+          \fmflabel{$s$}{o2}
+          \fmflabel{$\bar{c}$}{o3}
+          \fmflabel{$u$}{o4}
+          \fmfv{l.d=15,l.a=0,l={\myrbrace{30}{13}}$\bar{D^0}$}{D}
+          \fmfv{l.d=15,l.a=0,l={\myrbrace{30}{-13}}$K^-$}{K}
+          \fmf{fermion}{o1,i1}
+          \fmf{fermion,tension=1.5}{i2,v1}
+          \fmf{fermion}{v1,o4}
+          \fmf{phantom,tension=1.5}{t2,v2}
+          \fmf{boson,label=$W$,label.side=left,tension=0}{v1,v2}
+          \fmf{fermion}{v2,o2}
+          \fmf{fermion}{o3,v2}
+        \end{fmfgraph*}
+      \end{fmffile}
+      \vspace{0.5cm}
+      \caption*{CKM$+$colour suppressed $B^-\to\bar{D^0}K^-$}
+    \end{subfigure}
+  \end{figure}
+  \vspace{-0.3cm}
+  \begin{center}
+    $b\to u\bar{c}s$ and $b\to c\bar{u}s$ interference $\to$ Sensitivity to $\gamma$
+  \end{center}
+  \vspace{-0.3cm}
+  \begin{center}
+    $\mathcal{A}(B^-)=\mathcal{A}_B\big(\mathcal{A}_{D^0} + \colorbox{Cerulean!30}{$r_B$}e^{i(\scriptsize\colorbox{Cerulean!30}{$\delta_B$} - \colorbox{Cerulean!30}{$\gamma$})}\mathcal{A}_{\bar{D^0}}\big)$ \\
+    $\mathcal{A}(B^+)=\mathcal{A}_B\big(\mathcal{A}_{\bar{D^0}} + \colorbox{Cerulean!30}{$r_B$}e^{i(\scriptsize\colorbox{Cerulean!30}{$\delta_B$} + \colorbox{Cerulean!30}{$\gamma$})}\mathcal{A}_{D^0}\big)$ \\
+  \end{center}
+  \vspace{-0.35cm}
+  \begin{center}
+    Note: Even at tree level, BF is $3.6\times 10^{-4}$ $\implies$ Very challenging!
+  \end{center}
+\end{frame}
+
 \section{The LHCb detector}
 \begin{frame}{The LHCb detector}
   \begin{center}
@@ -1129,6 +1280,31 @@
   \end{center}
 \end{frame}
 
+\begin{frame}{The LHCb detector}
+  \begin{center}
+    {\Large Trigger: An important part of the LHCb detector}
+  \end{center}
+  \begin{columns}
+    \begin{column}{0.5\textwidth}
+      \begin{itemize}
+        \setlength\itemsep{1.0em}
+        \item{Reduces rate of collisions saved by three orders of magnitude}
+        \item{Online reconstruction with real-time calibration}
+        \item{Turbo stream: Write compact event directly from trigger and discard raw event data}
+        \item{High efficiency and high purity}
+      \end{itemize}
+    \end{column}
+    \begin{column}{0.5\textwidth}
+      \begin{figure}
+        \centering
+        \includegraphics[width=0.7\textwidth]{Plots/LHCb_Run2_Trigger_Diagram.pdf}
+        \vspace{-0.4cm}
+        \caption*{\tiny JINST \textbf{14} (2019) 04, P04013}
+      \end{figure}
+    \end{column}
+  \end{columns}
+\end{frame}
+
 \section{Methods for measuring \texorpdfstring{$\gamma$}{gamma}}
 \begin{frame}{Methods for measuring $\gamma$}
   \begin{center}
@@ -1245,6 +1421,8 @@
     \begin{subfigure}{0.45\textwidth}
       \begin{overpic}[percent,width = 1.0\textwidth]{Plots/B2DK_D2pipi_Minus.pdf}
         \put(60,41){\tikz\draw[dashed,red,line width=0.3mm](0.0,0.0)--(3.0,0.0);}
+        \put(10,-5){\vector(1.0,1.0){15}}
+        \put(-10,-10){\scriptsize Partially reconstructed background}
       \end{overpic}
     \end{subfigure}%
     \begin{subfigure}{0.45\textwidth}
@@ -1345,6 +1523,26 @@
   \end{center}
 \end{frame}
 
+\begin{frame}[fragile]{Doubly Suppressed Cabibbo $D$ decays}
+  \begin{center}
+    Asymmetries can be enhanced with a DCS decay: $\mathcal{A}_{D^0} = r_De^{i\delta_D}\mathcal{A}_{\bar{D^0}}$\\~\\
+    Interference between CF and DCS decays
+  \end{center}
+  \begin{equation*}
+    \begin{tikzcd}[column sep=huge]
+      & D^0K^- \arrow[dr, bend left = 25, "r_De^{i\delta_D}\mathcal{A}_{\bar{D^0}}\quad (r_D\approx0.06)"] & \\
+      B^- \arrow[ur, bend left, line width = 1.7, "\mathcal{A}_B"] \arrow[dr, bend right, "(r_B\approx0.1)\quad\mathcal{A}_B r_B e^{i(\delta_B - \gamma)}"'] & [5cm] & DK^- \\
+      & \bar{D^0}K^- \arrow[ur, bend right = 25, line width = 1.7, "\mathcal{A}_{\bar{D^0}}"'] & \\
+    \end{tikzcd}
+  \end{equation*}
+  \begin{equation*}
+    \lvert\mathcal{A}(B^-)\lvert^2\propto r_D^2 + r_B^2 + 2r_Br_D\cos(\delta_B - \gamma + \delta_D)
+  \end{equation*}
+  \begin{center}
+    $r_D$ and $\delta_D$ can be measured in charm mixing or directly at charm factories
+  \end{center}
+\end{frame}
+
 \begin{frame}{Doubly Suppressed Cabibbo $D$ decays}
   \begin{figure}
     \centering
@@ -1420,7 +1618,7 @@
   \vspace{-0.365cm}
   \begin{center}
     \Large Asymmetry is also seen in the double-peaked background\\~\\
-    \large Partially reconstructed $B^\pm\to D^*K^\pm$ decays, where $D^*\to D^0\pi^0$
+    \large Partially reconstructed $B^\pm\to D^*K^\pm$ decays, where $D^*\to D\pi^0$
   \end{center}
   \vspace{0.5cm}
 \end{frame}
@@ -2656,15 +2854,16 @@
   \begin{columns}
     \begin{column}{0.5\textwidth}
       \begin{center}
-        CP$ = -1$
+        $\pi^0$: CP$ = -1$
       \end{center}
     \end{column}
     \begin{column}{0.5\textwidth}
       \begin{center}
-        CP$ = +1$
+        $\gamma$: CP$ = +1$
       \end{center}
     \end{column}
   \end{columns}
+  \vspace{-0.05cm}
   \begin{center}
   {\large However, $\pi^0$ and $\gamma$ have \underline{opposite} intrinsic CP}
   \end{center}
@@ -2774,6 +2973,21 @@
     \large This analysis aims to fully reconstruct the $D^*\to D\pi^0$, $D\gamma$ decays, with $D\to K_S^0h^+h^-$, in bins of phase space
   \end{center}
   \vspace{0.5cm}
+\end{frame}
+
+\begin{frame}{$B$ decays to excited $D^*$ final states}
+  \vspace{0.1cm}
+  \begin{center}
+    {\Large Small aside: reconstruct $\gamma$ and $\pi^0\to\gamma\gamma$ in the ECAL}
+  \end{center}
+  \begin{figure}
+    \centering
+    \begin{tikzpicture}
+      \node(a){\includegraphics[width=0.8\textwidth]{Plots/LHCbDetector.jpg}};
+      \node at(a.center)[draw,red,line width=2pt,ellipse, minimum width=20pt, minimum height=80pt,rotate=0,yshift=-20pt,xshift=23pt]{};
+    \end{tikzpicture}
+    \caption*{\tiny LHCb detector}
+  \end{figure}
 \end{frame}
 
 \begin{frame}{$B$ decays to excited $D^*$ final states}
@@ -3096,14 +3310,16 @@
   \end{center}
 \end{frame}
 
-% TODO: Add plots to this slide
 \begin{frame}{Future prospects}
   \vspace{0.0cm}
   {\Large Future prospects:}
   \vspace{0.3cm}
   \begin{itemize}
     \setlength\itemsep{1.0em}
-    \item{The measurements presented today will make valuable improvements to future $\gamma$ combinations}
+    \item{The measurements presented today will make valuable improvements when added to future $\gamma$ combinations}
+    \begin{itemize}
+      \item[-]{Current average: $\gamma = 63.8^{+3.5}_{-3.7}$}
+    \end{itemize}
     \item{Several interesting Run 1$+$2 results are in the pipeline:}
     \begin{enumerate}
       \setlength\itemsep{1.0em}
@@ -3183,14 +3399,14 @@
     \setlength\itemsep{1.0em}
     \item{Long journey towards a precise determination of $\gamma$}
     \item{Two recent results of $B^\pm\to D^*h^\pm$ and $B^0\to DK^{*0}$ with $D\to K_S^0h^+h^-$, using external inputs from BESIII}
-    \begin{itemize}
-      \item{Unique synergy between beauty and charm factories}
-    \end{itemize}
     \item{A binned measurement with the channel $B^\pm\to[K^+K^-\pi^+\pi^-]_DK^\pm$ has been performed for the first time}
     \begin{itemize}
       \item{Need external inputs for charm strong-phases from BESIII}
     \end{itemize}
-    \item{LHCb is on track to reach a $1^\circ$ precision on $\gamma$ after Run 3 and 4!}
+    \item{LHCb is on track to reach a $1^\circ$ precision on $\gamma$ after Run 3 and 4}
+    \begin{itemize}
+      \item{With Upgrade II, we hope to bring this down further to $0.4^\circ$}
+    \end{itemize}
   \end{enumerate}
   \vspace{0.4cm}
   \begin{center}
@@ -3206,19 +3422,22 @@
     \setlength\itemsep{1.0em}
     \item{Long journey towards a precise determination of $\gamma$}
     \item{Two recent results of $B^\pm\to D^*h^\pm$ and $B^0\to DK^{*0}$ with $D\to K_S^0h^+h^-$, using external inputs from BESIII}
-    \begin{itemize}
-      \item{Unique synergy between beauty and charm factories}
-    \end{itemize}
     \item{A binned measurement with the channel $B^\pm\to[K^+K^-\pi^+\pi^-]_DK^\pm$ has been performed for the first time}
     \begin{itemize}
       \item{Need external inputs for charm strong-phases from BESIII}
     \end{itemize}
-    \item{LHCb is on track to reach a $1^\circ$ precision on $\gamma$ after Run 3 and 4!}
+    \item{LHCb is on track to reach a $1^\circ$ precision on $\gamma$ after Run 3 and 4}
+    \begin{itemize}
+      \item{With Upgrade II, we hope to bring this down further to $0.4^\circ$}
+    \end{itemize}
   \end{enumerate}
   \vspace{0.4cm}
   \begin{center}
     {\huge Thanks for your attention!}
   \end{center}
+\end{frame}
+
+\begin{frame}{}
 \end{frame}
 
 \end{document}
