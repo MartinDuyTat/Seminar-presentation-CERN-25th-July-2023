@@ -415,19 +415,10 @@
   \end{center}
   \vspace{-0.2cm}
   \begin{figure}
-    \includegraphics[width = 0.50\textwidth]{Plots/CKM_global_2012.png}
-    \vspace{-0.3cm}
-    \caption*{\centering\tiny CKMfitter Group (J. Charles et al.), Eur. Phys. J. C41, 1-131 (2005), updated results and plots available at: \href{http://ckmfitter.in2p3.fr}{http://ckmfitter.in2p3.fr}}
-  \end{figure}
-\end{frame}
-
-\begin{frame}{The CKM matrix and the Unitary Triangle}
-  \begin{center}
-    ... but with LHCb, this is no longer the case!
-  \end{center}
-  \vspace{-0.2cm}
-  \begin{figure}
-    \begin{overpic}[percent,width=0.50\textwidth]{Plots/CKM_global_2021.png}
+    \begin{overpic}[percent,width=0.50\textwidth]{Plots/CKM_global_2012.png}
+      \put(0,7){\vector(1.0,1.35){50}}
+      \put(0,7){\vector(1.0,0.8){35}}
+      \put(-50,2){Direct $\gamma$ measurements}
     \end{overpic}
     \vspace{-0.3cm}
     \caption*{\centering\tiny CKMfitter Group (J. Charles et al.), Eur. Phys. J. C41, 1-131 (2005), updated results and plots available at: \href{http://ckmfitter.in2p3.fr}{http://ckmfitter.in2p3.fr}}
@@ -484,19 +475,6 @@
 
 \begin{frame}{The CKM matrix and the Unitary Triangle}
   \begin{center}
-    Similar global fits have also been performed by UTfit, with similar results
-  \end{center}
-  \vspace{-0.2cm}
-  \begin{figure}
-    \begin{overpic}[percent,width=0.50\textwidth]{Plots/rhoeta-fullfit-sm_UTfit.png}
-    \end{overpic}
-    \vspace{-0.3cm}
-    \caption*{\centering\tiny http://www.utfit.org/UTfit/}
-  \end{figure}
-\end{frame}
-
-\begin{frame}{The CKM matrix and the Unitary Triangle}
-  \begin{center}
     \Large LHC seminar by P. Li and V. Jevtic on 13th June 2023:\\
     \Large Single most precise measurement of $\sin(2\beta)$
   \end{center}
@@ -537,6 +515,19 @@
     \Large HFLAV averages:\\
     \large $\Delta m_d = \SI{0.5065(19)}{\per\pico\second}$ \& $\Delta m_s = \SI{17.765(6)}{\per\pico\second}$
   \end{center}
+\end{frame}
+
+\begin{frame}{The CKM matrix and the Unitary Triangle}
+  \begin{center}
+    Similar global fits have also been performed by UTfit, with similar results
+  \end{center}
+  \vspace{-0.2cm}
+  \begin{figure}
+    \begin{overpic}[percent,width=0.50\textwidth]{Plots/rhoeta-fullfit-sm_UTfit.png}
+    \end{overpic}
+    \vspace{-0.3cm}
+    \caption*{\centering\tiny http://www.utfit.org/UTfit/}
+  \end{figure}
 \end{frame}
 
 \begin{frame}{The CKM matrix and the Unitary Triangle}
@@ -3166,30 +3157,6 @@
   \end{center}
 \end{frame}
 
-\begin{frame}{Binned four-body decay: $D^0\to K^+K^-\pi^+\pi^-$}
-  \vspace{0.0cm}
-  {\Large A binning scheme must satisfy the following:}
-  \begin{itemize}
-    \item{Minimal dilution of strong phases when integrating over bins}
-    \item{Enhance interference between $B^\pm\to D^0K^\pm$ and $B^\pm\to\bar{D^0}K^\pm$}
-  \end{itemize}
-  \vspace{0.4cm}
-  {\Large How to bin a 5-dimensional phase space?}
-  \begin{enumerate}
-    \item{For each $B^\pm$ candidate, use the amplitude model to calculate}
-  \end{enumerate}
-  \begin{center}
-    {\Large $\frac{\mathcal{A}(D^0)}{\mathcal{A}(\bar{D^0})} = r_De^{i\delta_D}$}
-  \end{center}
-  \begin{enumerate}
-    \setcounter{enumi}{1}
-    \setlength\itemsep{0.5em}
-    \item{Split $\delta_D$ into uniformly spaced bins}
-    \item{Use the symmetry line $r_D = 1$ to separate bin $+i$ from $-i$}
-    \item{Optimise the binning scheme by adjusting the bin boundaries in $\delta_D$}
-  \end{enumerate}
-\end{frame}
-
 \begin{frame}{Binning scheme}
   \begin{figure}
     \centering
@@ -3437,7 +3404,34 @@
   \end{center}
 \end{frame}
 
-\begin{frame}{}
+\begin{frame}{Backup slides}
+  \begin{center}
+    {\huge Backup slides}
+  \end{center}
+\end{frame}
+
+\begin{frame}{Binned four-body decay: $D^0\to K^+K^-\pi^+\pi^-$}
+  \vspace{0.0cm}
+  {\Large A binning scheme must satisfy the following:}
+  \begin{itemize}
+    \item{Minimal dilution of strong phases when integrating over bins}
+    \item{Enhance interference between $B^\pm\to D^0K^\pm$ and $B^\pm\to\bar{D^0}K^\pm$}
+  \end{itemize}
+  \vspace{0.4cm}
+  {\Large How to bin a 5-dimensional phase space?}
+  \begin{enumerate}
+    \item{For each $B^\pm$ candidate, use the amplitude model to calculate}
+  \end{enumerate}
+  \begin{center}
+    {\Large $\frac{\mathcal{A}(D^0)}{\mathcal{A}(\bar{D^0})} = r_De^{i\delta_D}$}
+  \end{center}
+  \begin{enumerate}
+    \setcounter{enumi}{1}
+    \setlength\itemsep{0.5em}
+    \item{Split $\delta_D$ into uniformly spaced bins}
+    \item{Use the symmetry line $r_D = 1$ to separate bin $+i$ from $-i$}
+    \item{Optimise the binning scheme by adjusting the bin boundaries in $\delta_D$}
+  \end{enumerate}
 \end{frame}
 
 \end{document}
